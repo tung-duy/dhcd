@@ -5,6 +5,9 @@
   justify-content: center;
 }
 
+#fwk-register {
+  padding-top: 40px;
+}
 .fwk-content p {
   font-size: 16px;
   color: #fff;
@@ -19,4 +22,40 @@
 
 .fwk-content p a {
   color: #fff;
+}
+
+.fwk-introduction {
+  float: none;
+}
+
+.fwk-info {
+  max-width: 600px;
+  /* margin: auto; */
+  background: #fff;
+  border-radius: 5px;
+  padding: 15px 0px;
+  color: gray;
+  float: right;
+  margin-right: 130px;
+}
+
+.fwk-info-title {
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 25px;
+}
+
+.fwk-info-text {
+  background: #d7f2e5;
+  color: #286d47;
+  margin: 0px 37px 20px 37px;
+  border-radius: 5px;
+  text-align: left;
+  padding: 20px 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.fwk-info-text p {
+  margin: 0;
+  font-size: 18px;
 }
