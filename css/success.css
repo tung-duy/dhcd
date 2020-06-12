@@ -29,7 +29,7 @@
 }
 
 .fwk-info {
-  max-width: 600px;
+  max-width: 650px;
   /* margin: auto; */
   background: #fff;
   border-radius: 5px;
@@ -48,14 +48,14 @@
 .fwk-info-text {
   background: #d7f2e5;
   color: #286d47;
-  margin: 0px 37px 20px 37px;
+  margin: 0px 30px 20px 30px;
   border-radius: 5px;
   text-align: left;
   padding: 20px 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 .fwk-info-text p {
   margin: 0;
-  font-size: 18px;
+  font-size: 20px;
 }
