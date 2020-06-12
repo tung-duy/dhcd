@@ -268,4 +268,7 @@ body::before {
   body {
     background-repeat: initial;
   }
+  .fwk-info {
+    margin-right: 0 !important;
+  }
 }

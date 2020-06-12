@@ -29,14 +29,14 @@
 }
 
 .fwk-info {
-  max-width: 650px;
-  /* margin: auto; */
+  max-width: 850px;
   background: #fff;
   border-radius: 5px;
   padding: 15px 0px;
   color: gray;
   float: right;
-  margin-right: 130px;
+  margin-right: 40px;
+  line-height: 3rem;
 }
 
 .fwk-info-title {
@@ -54,8 +54,114 @@
   padding: 20px 20px;
   margin-top: 20px;
   margin-bottom: 10px;
+  min-height: 215px;
 }
 .fwk-info-text p {
   margin: 0;
-  font-size: 20px;
+  font-size: 28px;
+}
+
+@media only screen and (min-width: 1200) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .fwk-info {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    float: none;
+    margin-top: 40px;
+  }
+  .fwk-info-text p {
+    margin: 0;
+    font-size: 28px;
+    line-height: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .fwk-info {
+    margin-right: 0;
+    margin-bottom: 20px;
+    float: none;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .fwk-info-text p {
+    margin: 0;
+    font-size: 24px;
+    line-height: 3rem;
+  }
+  #fwk-register {
+    padding-top: 20px;
+  }
+  hr {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .fwk-info {
+    margin-right: 0;
+    margin-bottom: 20px;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .fwk-info-text p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 2rem;
+  }
+  #fwk-register {
+    padding-top: 20px;
+  }
+  hr {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen /*and (min-width: 320px) */ and (max-width: 479px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  .fwk-info {
+    margin-right: 0;
+    margin-bottom: 20px;
+    float: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .fwk-info-text p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 2rem;
+  }
+  #fwk-register {
+    padding-top: 20px;
+  }
+  hr {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
 }
