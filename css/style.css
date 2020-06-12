@@ -130,6 +130,12 @@ body::before {
   margin-bottom: 16px;
 }
 
+.fwk-introduction span.date {
+  position: relative;
+  top: -4px;
+  font-size: 13px;
+  left: 1px;
+}
 @media only screen and (min-width: 1200) {
   * {
     padding: 0;
