@@ -1,0 +1,22 @@
+.fwk-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fwk-content p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 500;
+}
+
+.fwk-logo img {
+  width: 275px;
+}
+
+.fwk-content p a {
+  color: #fff;
+}

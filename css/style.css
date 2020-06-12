@@ -1,0 +1,265 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #091e42;
+  font-size: 13px;
+  background: url("/images/pattern-map.svg") center,
+    linear-gradient(to bottom, #1b4192, #244d9c);
+  background-repeat: no-repeat;
+  height: 100%;
+  background-position: 54% 43%;
+}
+
+body::before {
+  content: "";
+  background: url(/images/bg-bottom.png) no-repeat bottom;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  background-size: 100% 50%;
+}
+
+#fwk-register {
+  padding-top: 155px;
+  /* background-image: ; */
+}
+
+.fwk-register-form {
+  max-width: 404px;
+  padding: 48px 32px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 8px 20px 10px rgba(9, 30, 66, 0.55);
+  margin-left: 60px;
+}
+
+.fwk-register-form .fwk-form {
+}
+
+.fwk-register-form h3 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.1;
+  letter-spacing: normal;
+  color: #172b4d;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 13px;
+}
+.form-group .required {
+  color: red;
+}
+
+.fwk-form button {
+  border-radius: 12px;
+  background-color: #002177;
+  padding: 10px 0px;
+  width: 100%;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+  border: 1px solid #002177;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+.fwk-form button:hover {
+  background-color: #fff;
+  color: #002177;
+  border: 1px solid #002177;
+  box-shadow: 0 8px 10px 0px #00217794;
+}
+
+.input-group i {
+  position: absolute;
+  color: #8a94a5;
+  left: 16px;
+  z-index: 10;
+  top: 16px;
+  font-size: 16px;
+}
+
+.input-group input {
+  border-top-left-radius: 4px !important;
+  border-bottom-left-radius: 4px !important;
+  padding-left: 25px;
+  color: #8a94a5;
+  font-size: 14px;
+  padding: 12px 12px 12px 40px;
+}
+
+.fwk-introduction {
+  text-align: center;
+  float: right;
+  color: #fff;
+  font-size: 16px;
+  margin-right: 40px;
+}
+
+.fwk-introduction img {
+  max-width: 230px;
+}
+.fwk-logo {
+  margin-bottom: 53px;
+}
+
+.fwk-introduction h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 1.27;
+  font-weight: bold;
+}
+
+.fwk-introduction h3 {
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 1200) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  body::before {
+    background-size: 100% 35%;
+  }
+  .fwk-introduction {
+    margin-right: 10px;
+  }
+  .fwk-register-form {
+    margin-left: 10px;
+  }
+  .fwk-introduction h2 {
+    font-size: 26px;
+  }
+  .fwk-introduction h3 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  body::before {
+    content: none;
+  }
+  body {
+    background-repeat: initial;
+  }
+  .fwk-introduction {
+    margin-right: 0px;
+    font-size: 12px;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #fwk-register {
+    padding-top: 30px;
+  }
+  .fwk-introduction h2 {
+    font-size: 24px;
+  }
+  .fwk-introduction h3 {
+    font-size: 20px;
+  }
+  .fwk-logo {
+    margin-bottom: 25px;
+  }
+  .fwk-register-form {
+    margin: 20px auto;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  body::before {
+    content: none;
+  }
+  body {
+    background-repeat: initial;
+  }
+  #fwk-register {
+    padding-top: 20px;
+  }
+  .fwk-introduction {
+    margin-right: 0px;
+    font-size: 12px;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .fwk-introduction h2 {
+    font-size: 18px;
+  }
+  .fwk-logo {
+    margin-bottom: 30px;
+  }
+  .fwk-introduction h3 {
+    font-size: 16px;
+  }
+  .fwk-register-form {
+    margin: 20px auto;
+  }
+}
+
+@media screen /*and (min-width: 320px) */ and (max-width: 479px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  #fwk-register {
+    padding-top: 30px;
+  }
+  .fwk-introduction {
+    margin-right: 0px;
+    font-size: 12px;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .fwk-introduction h2 {
+    font-size: 18px;
+  }
+  .fwk-logo {
+    margin-bottom: 30px;
+  }
+  .fwk-introduction h3 {
+    font-size: 16px;
+  }
+  .fwk-register-form {
+    margin: 20px auto;
+  }
+  body::before {
+    content: none;
+  }
+  body {
+    background-repeat: initial;
+  }
+}
