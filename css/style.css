@@ -149,7 +149,7 @@ body::before {
     margin: 0;
   }
   body::before {
-    background-size: 100% 35%;
+    background-size: 100% 50%;
   }
   .fwk-introduction {
     margin-right: 10px;
@@ -162,6 +162,9 @@ body::before {
   }
   .fwk-introduction h3 {
     font-size: 20px;
+  }
+  #fwk-register {
+    padding-top: 30px;
   }
 }
 
