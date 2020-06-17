@@ -275,3 +275,60 @@ body::before {
     margin-right: 0 !important;
   }
 }
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+   /* your css rules for ipad portrait */
+}
+@media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+  #fwk-register {
+    padding-top: 30px!important;
+  }
+  .fwk-register-form {
+    margin: 0 auto;
+  }
+}
+
+
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    #fwk-register {
+      padding-top: 155px;
+    }
+ 
+}
+
+/* Portrait */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body:before {
+      background-size: 100% 30%;
+    }
+    #fwk-register {
+      padding-top: 20rem;
+    }
+}
+
+/* Landscape */
+@media only screen 
+  and (min-width: 1024px) 
+  and (max-height: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+    * {
+      padding: 0;
+      margin: 0;
+    }
+}
