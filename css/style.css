@@ -11,11 +11,31 @@ body {
   font-family: "Roboto Condensed", sans-serif;
   color: #091e42;
   font-size: 13px;
-  background: url("/images/pattern-map.svg") center,
-    linear-gradient(to bottom, #1b4192, #244d9c);
-  background-repeat: no-repeat;
   height: 100%;
-  background-position: 54% 43%;
+}
+
+#fwk-mc{
+  background-size: cover !important ;                    
+  background-repeat: no-repeat !important ;
+  background-position: 50% 30% !important  ;   
+  height: 100% ;
+  background: url("/images/MocChauMilk/background_mocchaumilk@2x.png")  ;
+}
+
+#fwk-gtn{
+  background-size: cover !important ;                    
+  background-repeat: no-repeat !important ;
+  background-position: 50% 30% !important ;   
+  height: 100% !important;
+  background: url("/images/GTNFoods/background_gtn@2x.png")  ;
+}
+
+#fwk-vilico{
+  background-size: cover !important;                    
+  background-repeat: no-repeat !important;
+  background-position: 50% 30%  !important;   
+  height: 100% !important;
+  background: url("/images/Vilico/background_vilico@2x.png");
 }
 
 body::before {
@@ -30,19 +50,67 @@ body::before {
   background-size: 100% 50%;
 }
 
+.fwk-color-mc{
+  color: #233d98;
+}
+
+.fwk-color-gtn{
+  color : #ffffff
+}
+
+.fwk-color-vilico{
+  color : #ffffff
+}
+
 #fwk-register {
   padding-top: 155px;
   /* background-image: ; */
 }
 
+.fwk-icon{
+  position: absolute;
+color: #8a94a5;
+left: 16px;
+z-index: 10;
+top: 15px;
+font-size: 16px;
+}
+
+.fwk-company-name{
+  text-shadow: 0 2px 8px rgba(9, 30, 66, 0.1);
+  margin-bottom: 0;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.25;
+ 
+}
+
+.fwk-sub-content{
+  text-shadow: 0 2px 8px rgba(9, 30, 66, 0.1);
+  font-size: 22px;
+  line-height: 1.27;
+  margin: 18px 0;
+}
+
+.fwk-address{
+  text-shadow: 0 2px 8px rgba(9, 30, 66, 0.1);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.38;
+}
+
+
+
 .fwk-register-form {
+  margin-top: 27px;
   max-width: 404px;
   padding: 48px 32px;
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0px 8px 20px 10px rgba(9, 30, 66, 0.55);
-  margin-left: 60px;
+  box-shadow: 0 2px 8px 0 rgba(9, 30, 66, 0.2);
+
 }
+
 
 .fwk-register-form .fwk-form {
 }
@@ -66,21 +134,47 @@ body::before {
 
 .fwk-form button {
   border-radius: 12px;
-  background-color: #002177;
+ 
   padding: 10px 0px;
   width: 100%;
   outline: none;
   border: none;
   margin-top: 20px;
-  border: 1px solid #002177;
+  border: 1px solid transparent;
   transition: all 0.3s ease-in-out;
   outline: none;
 }
+
+.fwk-mc-button{
+  background-color: #233d98;
+}
+
+.fwk-mc-button:hover{
+  color: #233d98;
+  border: 1px solid #233d98;
+}
+
+.fwk-gtn-button{
+  background-color: #2a802a;
+}
+
+.fwk-gtn-button:hover{
+  color: #2a802a;
+  border: 1px solid #2a802a;
+}
+
+.fwk-vilico-button{
+  background-color: #054be2;
+}
+
+.fwk-vilico-button:hover{
+  color: #054be2;
+  border: 1px solid #054be2;
+}
+
+
 .fwk-form button:hover {
   background-color: #fff;
-  color: #002177;
-  border: 1px solid #002177;
-  box-shadow: 0 8px 10px 0px #00217794;
 }
 
 .input-group i {
@@ -88,7 +182,7 @@ body::before {
   color: #8a94a5;
   left: 16px;
   z-index: 10;
-  top: 16px;
+  top: 15px;
   font-size: 16px;
 }
 
@@ -113,7 +207,7 @@ body::before {
   max-width: 230px;
 }
 .fwk-logo {
-  margin-bottom: 53px;
+  margin-bottom: 40px;
 }
 
 .fwk-introduction h2 {
@@ -158,15 +252,19 @@ body::before {
     margin-left: 10px;
   }
   .fwk-introduction h2 {
-    font-size: 26px;
+    font-size: 25px;
   }
   .fwk-introduction h3 {
     font-size: 20px;
   }
   #fwk-register {
-    padding-top: 30px;
+    padding-top: 65px;
+  }
+  .fwk-register-form {
+    margin-left: 52px;
   }
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   * {
@@ -237,6 +335,14 @@ body::before {
     margin: 20px auto;
   }
 }
+
+
+@media screen and (min-width: 992px) and (max-width: 1023px) {
+ #fwk-register{
+   padding-top: 120px;
+ }
+}
+
 
 @media screen /*and (min-width: 320px) */ and (max-width: 479px) {
   * {
