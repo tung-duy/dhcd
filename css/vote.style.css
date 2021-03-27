@@ -33,6 +33,8 @@ body {
 }
 .btn-collapse {
   color: #172b4d;
+  word-break: break-word;
+  white-space: normal;
 }
 .btn-collapse, .btn-collapse:hover {
   text-decoration: none;
@@ -45,9 +47,12 @@ body {
 .fwk-radio__content {
   margin-right: 10px;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
 }
 .fwk-radio__content .form-check-label, .fwk-radio__content input {
   cursor: pointer;
+  margin-left: 4px;
 }
 
 .fwk-form.fwk-form-issue {
@@ -86,6 +91,10 @@ body::before {
 
 .fwk-form {
   margin-top: 3rem;
+}
+
+.fwk-radio {
+  flex-wrap: wrap;
 }
 
 .fwk-form .container {
@@ -221,6 +230,8 @@ font-size: 16px;
 .fwk-button{
   background-color: #f3c443;
   color: #091e42;
+  word-break: break-word;
+  white-space: normal;
 }
 
 .fwk-button:hover{
@@ -452,6 +463,9 @@ font-size: 16px;
  #fwk-register{
    padding-top: 120px;
  }
+ .fwk-radio {
+  flex-wrap: wrap;
+}
 }
 
 
