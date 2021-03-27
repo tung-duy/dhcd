@@ -524,6 +524,7 @@ font-size: 16px;
     #fwk-register {
       padding-top: 8%;
     }
+   
 }
 
 /* Portrait */
@@ -550,6 +551,7 @@ font-size: 16px;
     .fwk-register-form {
       margin: 2rem auto;
     }
+
 }
 
 /* Landscape */
@@ -562,4 +564,29 @@ font-size: 16px;
       padding: 0;
       margin: 0;
     }
+}
+
+/* Portrait */
+/* @media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 834px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+} */
+
+/* Landscape */
+@media only screen 
+  and (min-width: 1000px) 
+  and (max-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2)
+ {
+  #fwk-gtn {
+    background-size: 160%!important;
+    background-position: 89% 30% !important;
+  }
+  #fwk-register {
+    padding-top: 2%;
+  }
 }
