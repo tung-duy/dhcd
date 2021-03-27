@@ -45,6 +45,53 @@ body::before {
   background-size: 100% 50%;
 }
 
+#fwk-hd-choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-size: cover !important ;                    
+  background-repeat: no-repeat !important ;
+  background-position: 100% 100% !important ;   
+  height: 100% !important;
+  background: url("/images/HdBank/background_hdbank_blur.png");
+}
+#fwk-choose {
+  /* display: flex; */
+  text-align: center;
+}
+
+.fwk-hd-choose__content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.choose__content__block {
+  padding: 32px 25px;
+  background: #fff;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(15.1px);
+  backdrop-filter: blur(15.1px);
+  box-shadow: 0 4px 8px 0 rgba(9, 30, 66, 0.2);
+  background-color: var(--white);
+  border: none;
+  cursor: pointer;
+}
+
+.choose__content__block img{
+  margin-bottom: 25px;
+}
+
+.choose__content__block:first-child {
+  margin-right: 100px;
+}
+
+.fwk-text_subTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #172b4d;
+}
+
 .fwk-color-mc{
   color: #233d98;
 }
@@ -278,9 +325,19 @@ font-size: 16px;
   .fwk-register-form {
     margin-left: 16%;
   }
+  .fwk-main-choose {
+    margin-bottom: 18rem;
+  }
+  .fwk-logo {
+    margin-bottom: 100px;
+  }
 }
 
 @media screen and (min-width: 1600px) { 
+  * {
+    padding: 0;
+    margin: 0;
+  }
   .fwk-register-form {
     margin-left: 40%;
   }
@@ -295,6 +352,12 @@ font-size: 16px;
   }
   #fwk-register {
     padding-top: 5%;
+  }
+  .fwk-main-choose {
+    margin-bottom: 18rem;
+  }
+  .fwk-logo {
+    margin-bottom: 104px;
   }
 }
 
@@ -332,6 +395,12 @@ font-size: 16px;
   .fwk-register-form {
     margin: 20px auto;
   }
+  .fwk-main-choose {
+    margin-bottom: 4rem;
+  }
+  .fwk-logo {
+    margin-bottom: 100px;
+  }
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -366,6 +435,12 @@ font-size: 16px;
   }
   .fwk-register-form {
     margin: 20px auto;
+  }
+  .fwk-logo {
+    margin-bottom: 4rem;
+  }
+  .choose__content__block:first-child {
+    margin-right: 2rem;
   }
 }
 
@@ -412,6 +487,16 @@ font-size: 16px;
   }
   .fwk-info {
     margin-right: 0 !important;
+  }
+  .fwk-logo {
+    margin-bottom: 3.5rem;
+  }
+  .fwk-hd-choose__content {
+    flex-direction: column;
+  }
+  .choose__content__block:first-child {
+    margin-right: 0;
+    margin-bottom: 2rem;
   }
 }
 
