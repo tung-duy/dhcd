@@ -31,6 +31,7 @@ body {
   background-position: 100% 100% !important ;   
   height: 100% !important;
   background: url("/images/HdBank/background_hdbank.png")  ;
+  overflow: scroll;
 }
 body::before {
   content: "";
@@ -49,7 +50,7 @@ body::before {
 }
 
 .fwk-color-hd{
-  color : #172b4d
+  color : #B71427
 }
 
 .fwk-color-vilico{
@@ -84,6 +85,9 @@ font-size: 16px;
   font-size: 22px;
   line-height: 1.27;
   margin: 18px 0;
+}
+.fwk-address, .fwk-sub-content {
+  color: #F7A326;
 }
 
 .fwk-address{
@@ -260,16 +264,37 @@ font-size: 16px;
     margin-left: 10px;
   }
   .fwk-introduction h2 {
-    font-size: 25px;
+    font-size: 2.2rem;
   }
   .fwk-introduction h3 {
-    font-size: 20px;
+    font-size: 1.6rem;
+  }
+  .fwk-introduction .fwk-address {
+    font-size: 1.2rem;
   }
   #fwk-register {
     padding-top: 65px;
   }
   .fwk-register-form {
-    margin-left: 52px;
+    margin-left: 16%;
+  }
+}
+
+@media screen and (min-width: 1600px) { 
+  .fwk-register-form {
+    margin-left: 40%;
+  }
+  .fwk-introduction .fwk-company-name {
+    font-size: 2.6rem;
+  }
+  .fwk-introduction .fwk-sub-content {
+    font-size: 2rem;
+  }
+  .fwk-introduction .fwk-address {
+    font-size: 1.2rem;
+  }
+  #fwk-register {
+    padding-top: 5%;
   }
 }
 
@@ -412,7 +437,7 @@ font-size: 16px;
       margin: 0;
     }
     #fwk-register {
-      padding-top: 155px;
+      padding-top: 8%;
     }
 }
 
