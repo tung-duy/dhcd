@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="164.001" height="164" viewBox="0 0 164.001 164">
+  <g id="Group_11932" data-name="Group 11932" transform="translate(-636 -430)">
+    <g id="Group_11930" data-name="Group 11930" transform="translate(288.56 420)">
+      <path id="Path_17446" data-name="Path 17446" d="M443.144,89.252q-.351-.176-.71-.344A21.468,21.468,0,0,0,446.109,76.7c0-10.861-7.659-19.7-17.074-19.7S411.96,65.836,411.96,76.7a21.463,21.463,0,0,0,3.674,12.213c-.37.169-.617.294-.725.35a28.252,28.252,0,0,0-16.469,25.585v6.826A5.335,5.335,0,0,0,403.769,127H454.3a5.335,5.335,0,0,0,5.329-5.329v-6.826A28.252,28.252,0,0,0,443.144,89.252Z" fill="#fff"/>
+      <g id="Group_11929" data-name="Group 11929" transform="translate(400.286 58.846)">
+        <path id="Path_17447" data-name="Path 17447" d="M450.266,236.448c-.092.112-.18.227-.274.338a16.681,16.681,0,0,1-26.075,0c-.094-.11-.183-.225-.275-.338A26.374,26.374,0,0,0,408.2,260.376V267.2a3.484,3.484,0,0,0,3.484,3.484h50.531A3.484,3.484,0,0,0,465.7,267.2v-6.826A26.374,26.374,0,0,0,450.266,236.448Z" transform="translate(-408.205 -204.377)" fill="#a2aab7"/>
+        <path id="Path_17448" data-name="Path 17448" d="M494.966,102.466A14.049,14.049,0,0,0,505.323,97.7a19.326,19.326,0,0,0,4.871-13.082c0-9.859-6.818-17.851-15.229-17.851s-15.229,7.992-15.229,17.851A19.325,19.325,0,0,0,484.609,97.7,14.049,14.049,0,0,0,494.966,102.466Z" transform="translate(-466.217 -66.765)" fill="#a2aab7"/>
+      </g>
+    </g>
+    <g id="Group_11931" data-name="Group 11931" transform="translate(0)">
+      <path id="Subtraction_1" data-name="Subtraction 1" d="M-3018-9976h-2v-32h32v2h-30v30Z" transform="translate(3656 10438)" fill="#a2aab7"/>
+      <path id="Subtraction_2" data-name="Subtraction 2" d="M32,32H0V0H2V30H32v2Z" transform="translate(800.001 462.001) rotate(180)" fill="#a2aab7"/>
+      <path id="Subtraction_3" data-name="Subtraction 3" d="M2,32H0V0H32V2H2V32Z" transform="translate(800.001 593.999) rotate(180)" fill="#a2aab7"/>
+      <path id="Subtraction_4" data-name="Subtraction 4" d="M32,32H0V0H2V30H32v2Z" transform="translate(636.002 562)" fill="#a2aab7"/>
+    </g>
+  </g>
+</svg>

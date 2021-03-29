@@ -518,6 +518,9 @@ font-size: 16px;
   .fwk-hd-form-vote {
     margin: auto 20px;
   }
+  .fwk-radio__content {
+    width: 100%;
+  }
 }
 
 @media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {

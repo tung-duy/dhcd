@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ĐẠI HỘI ĐỒNG CỔ ĐÔNG THƯỜNG NIÊN 2021</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="../css/hsc.style.css" />
+  <script src="https://kit.fontawesome.com/9fa84a5f36.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="fwk-main">
+    <main id="fwk-main__content">
+      <section class="fwk-main_content__section">
+        <div class="fwk-logo">
+          <img src="../images/hsc/logo_hsc.svg" alt="logo HD Bank" />
+        </div>
+        <div class="fwk-title">Vui lòng xác minh thông tin của bạn với 2 bước sau</div>
+        <div class="fwk-steps">
+          <ul class="progressbar">
+            <li class="complete">Chụp ảnh CMND / CCCD</li>
+            <li class="">Chụp ảnh khuôn mặt</li>
+          </ul>
+        </div>
+        <div class="clearfix"></div>
+        <fieldset class="fwk-hd-choose__content">
+          <form class="fwk-form-upload">
+            <div class="upload-block">
+              <p>Mặt trước</p>
+              <img class="upload-block_thumbnail img-fluid" id="cccd_mattruoc" src="../images/hsc/cccd_mattruoc.svg" />
+              <img class="img-fluid upload-success" id=""src="../images/hsc/icon_checked.svg" />
+              <input type="file" id="myFile" name="filename" style="display:none;">
+              <button id="btnUpload" class="btnUpload" name="button" value="Upload"><img src="../images/hsc/icon_upload.svg"/>Tải lên</button>
+            </div>
+            <div class="upload-block">
+              <p>Mặt sau</p>
+              <img class="upload-block_thumbnail img-fluid" src="../images/hsc/cccd_matsau.svg" />
+              <img class="img-fluid upload-success" id=""src="../images/hsc/icon_checked.svg" />
+              <input type="file" id="myFile1" name="filename1" style="display:none;">
+              <button id="btnUpload1" class="btnUpload" name="button" value="Upload"><img src="../images/hsc/icon_upload.svg"/>Tải lên</button>
+            </div>
+          </form>
+        <div class="center">
+          <button class="btn btn-primary fwk-button next">Tiếp theo</button>
+        </div>
+      </fieldset>
+      <fieldset>
+        <h2>Step 2--------------------</h2>
+      </fieldset>
+      </section>
+    </main>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script>
+    function reaUrl(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+          $(`#cccd_mattruoc`).attr('src', e.target.result);
+          // $(`#cccd_mattruoc`).toggleClass('upload-success');
+        }
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+    $("#btnUpload").click(function(e) {
+      e.preventDefault();
+      document.getElementById("myFile").click();
+    });
+    $("#btnUpload1").click(function(e) {
+      e.preventDefault();
+      document.getElementById("myFile1").click();
+    });
+    $("#myFile").change(function() {
+      reaUrl(this);
+    });
+    var animating;
+    var current_fs, next_fs, previous_fs;
+    $('.next').click(function(e) {
+      if (animating) return false;
+      animating = true;
+      current_fs = $(this).parent().parent();
+      next_fs = $(this).parent().parent().next();
+    });
+  </script>
+</body>
+
+</html>
