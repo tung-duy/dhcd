@@ -488,9 +488,18 @@ main#fwk-main__content {
   .progressbar li:after {
     left: -110%;
     width: 140%;
+    -moz-left: -110%;
+    -webkit-left: -110%;
+    -o-left: -110%;
+    -ms-left: -110%;
+    -moz-with: 140%;
+    -webkit-with: 140%;
+    -o-with: 140%;
+    -ms-with: 140%;
   }
   .progressbar li {
     width: auto;
+    
   }
   .btn-form {
     width: 100%;
