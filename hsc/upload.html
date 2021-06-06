@@ -22,8 +22,8 @@
   </head>
 
   <body>
-    <div id="fwk-main">
-      <main id="fwk-main__content">
+    <div class="fwk-main">
+      <main class="fwk-main__content">
         <section class="fwk-main_content__section">
           <div class="fwk-logo">
             <img src="../images/hsc/logo_hsc.svg" alt="logo HD Bank" />
@@ -130,7 +130,9 @@
               <button class="btn btn-primary fwk-button comeback d-none">
                 Quay lại
               </button>
-              <button class="btn btn-primary fwk-button next" disabled>Tiếp theo</button>
+              <button class="btn btn-primary fwk-button next" disabled>
+                Tiếp theo
+              </button>
             </div>
           </form>
         </section>
@@ -153,68 +155,68 @@
     ></script>
     <script>
       function reaUrl(input) {
-        const preview = $(input).prevAll(".preview");
-        const check = $(input).prevAll(".check");
+        const preview = $(input).prevAll('.preview');
+        const check = $(input).prevAll('.check');
         if (input.files && input.files[0]) {
           var reader = new FileReader();
           reader.onload = function (e) {
-            preview.attr("src", e.target.result);
-            check.removeClass("d-none");
-            const count = $(".check.d-none").length;
+            preview.attr('src', e.target.result);
+            check.removeClass('d-none');
+            const count = $('.check.d-none').length;
             if (count === 1) {
-              $(".next").attr("disabled", false);
-              $(".progressbar .one").addClass("complete");
+              $('.next').attr('disabled', false);
+              $('.progressbar .one').addClass('complete');
             }
             if (count === 0) {
-              $(".next").attr("disabled", false);
-              $(".progressbar .two").addClass("complete");
+              $('.next').attr('disabled', false);
+              $('.progressbar .two').addClass('complete');
             }
           };
           reader.readAsDataURL(input.files[0]);
         }
       }
 
-      $(".btnUpload").click(function (e) {
+      $('.btnUpload').click(function (e) {
         e.preventDefault();
         const self = $(this);
-        const inputTarget = self.data("target");
+        const inputTarget = self.data('target');
         $(`input[name=${inputTarget}]`).click();
       });
-      $("input[type=file]").change(function () {
+      $('input[type=file]').change(function () {
         reaUrl(this);
       });
 
-      $(".next").click(function (e) {
+      $('.next').click(function (e) {
         e.preventDefault();
         const self = $(this);
-        const comeback = self.prevAll(".comeback");
-        const active = $("#form-abc").find(".fwk-hd-choose__content.active");
-        if (active.hasClass("step-one")) {
-          active.removeClass("active");
-          self.html("Gửi xác thực");
-          self.attr("type", "submit");
-          self.attr("disabled", true);
-          self.parent().addClass("btn-form");
-          comeback.removeClass("d-none");
-          $(".fwk-hd-choose__content.step-two").addClass("active");
+        const comeback = self.prevAll('.comeback');
+        const active = $('#form-abc').find('.fwk-hd-choose__content.active');
+        if (active.hasClass('step-one')) {
+          active.removeClass('active');
+          self.html('Gửi xác thực');
+          self.attr('type', 'submit');
+          self.attr('disabled', true);
+          self.parent().addClass('btn-form');
+          comeback.removeClass('d-none');
+          $('.fwk-hd-choose__content.step-two').addClass('active');
         }
-        if (active.hasClass("step-two")) {
-          $("#form-abc").submit();
+        if (active.hasClass('step-two')) {
+          $('#form-abc').submit();
         }
       });
-      $(".comeback").click(function (e) {
+      $('.comeback').click(function (e) {
         e.preventDefault();
         const self = $(this);
-        const next = self.nextAll(".next");
-        const active = $("#form-abc").find(".fwk-hd-choose__content.active");
-        if (active.hasClass("step-two")) {
-          active.removeClass("active");
-          self.addClass("d-none");
-          next.removeAttr("type");
-          next.parent().removeClass("btn-form");
-          next.html("Tiếp theo");
-          next.removeAttr("disabled");
-          $(".fwk-hd-choose__content.step-one").addClass("active");
+        const next = self.nextAll('.next');
+        const active = $('#form-abc').find('.fwk-hd-choose__content.active');
+        if (active.hasClass('step-two')) {
+          active.removeClass('active');
+          self.addClass('d-none');
+          next.removeAttr('type');
+          next.parent().removeClass('btn-form');
+          next.html('Tiếp theo');
+          next.removeAttr('disabled');
+          $('.fwk-hd-choose__content.step-one').addClass('active');
         }
       });
     </script>

@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   color: #091e42;
   font-size: 13px;
   height: 100%;
@@ -66,7 +66,7 @@ body {
 
 .progressbar li:after {
   background: #979797;
-  content: "";
+  content: '';
   height: 3px;
   /* left: -50%; */
   left: -185%;
@@ -99,18 +99,18 @@ body {
 }
 /* end step */
 
-#fwk-main {
+.fwk-main {
   height: 100%;
   overflow: scroll;
   background-size: cover !important ;
   background-repeat: no-repeat !important ;
   background-position: 100% 100% !important ;
-  background: url("../images/hsc/background_hsc@2x.png");
+  background: url('../images/hsc/background_hsc@2x.png');
   position: relative;
   z-index: -9999;
 }
 
-main#fwk-main__content {
+main.fwk-main__content {
   margin-top: 87px;
 }
 
@@ -130,7 +130,7 @@ main#fwk-main__content {
 
 .clearfix::after {
   display: block;
-  content: "";
+  content: '';
   clear: both;
 }
 .fwk-content,
@@ -139,7 +139,8 @@ main#fwk-main__content {
   color: #fff;
 }
 
-.fwk-company-name, .fwk-sub-content {
+.fwk-company-name,
+.fwk-sub-content {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -177,7 +178,7 @@ main#fwk-main__content {
 }
 .fwk-form button {
   border-radius: 12px;
- 
+
   padding: 10px 0px;
   width: 100%;
   outline: none;
@@ -335,11 +336,11 @@ main#fwk-main__content {
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
   /* Styles */
-    * {
+  * {
     margin: 0;
     padding: 0;
   }
-  #fwk-main {
+  .fwk-main {
     background-position: 80% 100% !important;
   }
   .fwk-register-form {
@@ -355,7 +356,7 @@ main#fwk-main__content {
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
   /* Styles */
-    * {
+  * {
     margin: 0;
     padding: 0;
   }
@@ -364,7 +365,7 @@ main#fwk-main__content {
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Styles */
-    * {
+  * {
     margin: 0;
     padding: 0;
   }
@@ -377,7 +378,7 @@ main#fwk-main__content {
 /* iPads (landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   /* Styles */
-    * {
+  * {
     margin: 0;
     padding: 0;
   }
@@ -390,7 +391,7 @@ main#fwk-main__content {
 /* iPads (portrait) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   /* Styles */
-    * {
+  * {
     margin: 0;
     padding: 0;
   }
@@ -404,7 +405,7 @@ main#fwk-main__content {
     **********/
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   /* Styles */
-    * {
+  * {
     margin: 0;
     padding: 0;
   }
@@ -416,7 +417,7 @@ main#fwk-main__content {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   /* Styles */
-    * {
+  * {
     margin: 0;
     padding: 0;
   }
@@ -428,7 +429,7 @@ main#fwk-main__content {
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1224px) {
   /* Styles */
-    * {
+  * {
     margin: 0;
     padding: 0;
   }
@@ -441,7 +442,7 @@ main#fwk-main__content {
 /* Large screens ----------- */
 @media only screen and (min-width: 1824px) {
   /* Styles */
-    * {
+  * {
     margin: 0;
     padding: 0;
   }
@@ -454,7 +455,7 @@ main#fwk-main__content {
 /* iPhone 4 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   /* Styles */
-    * {
+  * {
     margin: 0;
     padding: 0;
   }
@@ -478,7 +479,7 @@ main#fwk-main__content {
     margin-bottom: 24px;
     padding: 20px 20px;
   }
-  main#fwk-main__content {
+  main.fwk-main__content {
     padding: 40px 24px;
     margin-top: 0px;
   }
@@ -499,7 +500,6 @@ main#fwk-main__content {
   }
   .progressbar li {
     width: auto;
-    
   }
   .btn-form {
     width: 100%;
