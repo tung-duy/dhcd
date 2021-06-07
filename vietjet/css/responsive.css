@@ -72,6 +72,9 @@
   .progressbar li:after {
     left: -115%;
   }
+  .title-img {
+    width: 300px;
+  }
 }
 
 /* Smartphones (landscape) ----------- */
@@ -123,6 +126,9 @@
   }
   .fwk-main_content__section {
     width: 340px;
+  }
+  .title-img {
+    width: 250px;
   }
 }
 
@@ -177,6 +183,9 @@
   .title-content .sub1-title,
   .title-content .sub2-title {
     margin-top: 10px;
+  }
+  .title-img {
+    width: 300px;
   }
 }
 
@@ -234,6 +243,9 @@
   .section-logo img {
     height: 50px;
   }
+  .title-img {
+    width: 600px;
+  }
 }
 
 /* iPads (landscape) ----------- */
@@ -282,6 +294,9 @@
   .fwk-register-form {
     width: 425px;
     margin-top: 0px;
+  }
+  .title-img {
+    width: 800px;
   }
 }
 
@@ -353,6 +368,9 @@
   .form-main .label-mobile,
   .form-main .form-title {
     display: none;
+  }
+  .title-img {
+    width: 800px;
   }
 }
 

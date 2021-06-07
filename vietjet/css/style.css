@@ -158,6 +158,9 @@ html {
 .title-content {
   text-align: center;
 }
+.title-img {
+  width: 800px;
+}
 
 /* background title */
 .section-logo {
