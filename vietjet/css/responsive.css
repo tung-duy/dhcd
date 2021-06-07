@@ -13,7 +13,7 @@
   }
   .section-logo {
     /* margin-top: 50px; */
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     padding: 0;
   }
   .section-logo img {
@@ -29,7 +29,15 @@
   }
   .title-content .sub1-title,
   .title-content .sub2-title {
-    display: none;
+    /* display: none; */
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .title-content .sub1-title {
+    font-size: 12px;
+  }
+  .title-content .sub2-title {
+    font-size: 11px;
   }
   .title-content .title {
     font-size: 14px;
@@ -74,6 +82,7 @@
   }
   .title-img {
     width: 300px;
+    margin-bottom: 10px;
   }
 }
 
