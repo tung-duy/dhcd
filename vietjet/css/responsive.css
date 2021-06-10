@@ -11,6 +11,16 @@
     background-repeat: no-repeat;
     background-position: bottom;
   }
+  .vj-body.bg-blur {
+    background: url('../images/bg-blur-1@2x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    overflow-y: scroll;
+  }
   .section-logo {
     /* margin-top: 50px; */
     margin-bottom: 0px;
@@ -119,6 +129,16 @@
     background-repeat: no-repeat;
     background-position: bottom;
   }
+  .vj-body.bg-blur {
+    background: url('../images/bg-blur-2@2x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    overflow-y: scroll;
+  }
   .section-logo img {
     height: 30px;
   }
@@ -153,6 +173,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+  }
+  .vj-body.bg-blur {
+    background: url('../images/bg-blur-2@2x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    overflow-y: scroll;
   }
   .section-logo {
     margin-bottom: 10px;
@@ -222,6 +252,16 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
+  }
+  .vj-body.bg-blur {
+    background: url('../images/bg-blur-2@2x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    overflow-y: scroll;
   }
   .img-footer__mobile {
     position: fixed;

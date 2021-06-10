@@ -13,6 +13,16 @@ html {
   position: relative;
   overflow-y: scroll;
 }
+.vj-body.bg-blur {
+  background: url('../images/bg-blur-2@2x.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+  overflow-y: scroll;
+}
 @font-face {
   font-family: jamBono;
   src: url('../font/jambono-medium.ttf');
