@@ -50,7 +50,7 @@
           <form class="" id="form-abc">
             <fieldset class="fwk-hd-choose__content step-one active">
               <div class="upload-content">
-                <div class="upload-block">
+                <div class="upload-block set-padding">
                   <p>Mặt trước</p>
                   <img
                     class="upload-block_thumbnail img-fluid preview"
@@ -136,10 +136,10 @@
               </div>
             </fieldset>
             <div class="center">
-              <button class="btn btn-primary fwk-button comeback d-none">
-                Quay lại
+              <button class="btn btn-primary fwk-button set-color set-res comeback">
+                Trở lại/Back
               </button>
-              <button class="btn btn-primary fwk-button next" disabled>
+              <button class="btn btn-primary fwk-button set-color set-res next">
                 Tiếp theo
               </button>
             </div>
@@ -190,12 +190,14 @@
 
       $('.btnUpload').click(function (e) {
         e.preventDefault();
+        console.log('zxc');
         const self = $(this);
         const inputTarget = self.data('target');
         $(`input[name=${inputTarget}]`).click();
       });
       $('input[type=file]').change(function () {
         reaUrl(this);
+        $( ".comeback" ).addClass('d-none')
       });
 
       $('.next').click(function (e) {
@@ -207,10 +209,8 @@
           active.removeClass('active');
           self.html('Gửi xác thực');
           self.attr('type', 'submit');
-          self.attr('disabled', true);
-          self.parent().addClass('btn-form');
-          comeback.removeClass('d-none');
           $('.fwk-hd-choose__content.step-two').addClass('active');
+          $( ".comeback" ).removeClass('d-none')
         }
         if (active.hasClass('step-two')) {
           $('#form-abc').submit();
@@ -223,11 +223,9 @@
         const active = $('#form-abc').find('.fwk-hd-choose__content.active');
         if (active.hasClass('step-two')) {
           active.removeClass('active');
-          self.addClass('d-none');
           next.removeAttr('type');
           next.parent().removeClass('btn-form');
           next.html('Tiếp theo');
-          next.removeAttr('disabled');
           $('.fwk-hd-choose__content.step-one').addClass('active');
         }
       });
