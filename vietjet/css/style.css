@@ -418,3 +418,11 @@ upload-block {
 .two {
   color: #58595b !important;
 }
+
+.set-margin-onl {
+  margin-left: 30px;
+}
+
+.set-margin-gift {
+  margin-left: -10px;
+}
