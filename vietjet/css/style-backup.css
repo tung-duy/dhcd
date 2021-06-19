@@ -82,6 +82,11 @@ html {
 }
 
 /* Form */
+.section-form {
+  position: absolute;
+  top: 400px;
+  right: 75px;
+}
 
 .form-main {
   background: #fff;
@@ -264,7 +269,7 @@ upload-block {
   margin-bottom: 90px;
 }
 .img-fluid {
-  width: 100%;
+  width: 200px;
   height: auto;
 }
 .upload-success {
@@ -387,8 +392,11 @@ upload-block {
   background-color: white !important;
 }
 
-.set-color {
+.next {
   background-image: linear-gradient(61deg, #f9a51a -12%, #fbb612 47%, #ffdd00 112%);
+}
+
+.set-color {
   font-weight: 600;
   color: black !important;
   padding: 12px 32px !important;
@@ -408,13 +416,4 @@ upload-block {
   position: fixed;
   right: -1px;
   bottom: -1px;
-  width: 100px;
-}
-
-.one {
-  color: #58595b !important;
-}
-
-.two {
-  color: #58595b !important;
 }
