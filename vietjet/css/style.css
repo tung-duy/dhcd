@@ -26,7 +26,7 @@ html {
   src: url('../font/Roboto-Medium.ttf');
 }
 #fwk-body {
-  height: 110vh;
+  overflow: scroll;
   font-family: 'Bai Jamjuree', sans-serif;
 }
 .fwk-main_content__section {
