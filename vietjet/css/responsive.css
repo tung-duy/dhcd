@@ -1,5 +1,5 @@
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 720px) {
   /* Styles */
   * {
     margin: 0;
@@ -81,11 +81,11 @@
     width: 340px;
   }
   .progressbar li:after {
-    left: -115%;
-    -moz-left: -115%;
-    -webkit-left: -115%;
-    -o-left: -115%;
-    -ms-left: -115%;
+    left: -184% !important;
+    -moz-left: -184% !important;
+    -webkit-left: -184% !important;
+    -o-left: -184% !important;
+    -ms-left: -184% !important;
   }
   .progressbar li:after {
     left: -115%;
@@ -115,6 +115,17 @@
     margin-bottom: 50px;
   }
 } */
+@media only screen and (min-device-width: 72px) and (max-device-width: 767px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .fwk-form-btn {
+    display: flex;
+    justify-content: space-between;
+  }
+  .fwk-form-btn button {
+    padding: 12px 6px !important;
+    width: unset;
+    font-size: 13px;
+  }
+}
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
@@ -436,6 +447,22 @@
   }
 }
 
+@media only screen and (max-device-width: 539px) {
+  .comeback {
+    margin-right: unset;
+  }
+  .center {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .set-res {
+    width: 100%;
+  }
+  .set-res:nth-child(1) {
+    margin-top: 20px;
+  }
+}
+
 /* iPhone 4 ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   /* Styles */
@@ -446,6 +473,9 @@
   .fwk-register-form {
     width: 425px;
     margin-top: 0px;
+  }
+  .comeback {
+    margin-right: unset;
   }
 }
 
