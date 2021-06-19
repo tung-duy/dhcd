@@ -6,10 +6,9 @@
     padding: 0;
   }
   .vj-body {
-    background: url('../images/bg.png');
+    background: url('../images/m-bg-new.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
   }
   .vj-body.bg-blur {
     background: url('../images/bg-blur-1@2x.png');
@@ -19,7 +18,6 @@
     height: 100%;
     z-index: 1;
     position: relative;
-    overflow-y: scroll;
   }
   .section-logo {
     /* margin-top: 50px; */
@@ -135,10 +133,9 @@
     padding: 0;
   }
   .vj-body {
-    background: url('../images/bg.png');
+    background: url('../images/m-bg-new.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
   }
   .vj-body.bg-blur {
     background: url('../images/bg-blur-2@2x.png');
@@ -148,7 +145,6 @@
     height: 100%;
     z-index: 1;
     position: relative;
-    overflow-y: scroll;
   }
   .section-logo img {
     height: 30px;
@@ -180,10 +176,9 @@
     padding: 0;
   }
   .vj-body {
-    background: url('../images/bg.png');
+    background: url('../images/m-bg-new.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
   }
   .vj-body.bg-blur {
     background: url('../images/bg-blur-2@2x.png');
@@ -193,7 +188,6 @@
     height: 100%;
     z-index: 1;
     position: relative;
-    overflow-y: scroll;
   }
   .section-logo {
     margin-bottom: 10px;
@@ -251,6 +245,53 @@
     margin-top: 0px;
   }
 }
+
+@media only screen and (min-device-width: 1200px) {
+  .section-form {
+    position: absolute;
+    top: 400px;
+    right: 75px;
+  }
+  .fwk-main_content__section {
+    position: absolute;
+    right: 0px;
+    top: 380px;
+}
+  .form-main {
+    margin-right: 90px;
+  }
+  #fwk-body {
+    height: 120vh !important;
+  }
+}
+
+@media only screen and (max-device-width: 1199px) {
+  .logovj {
+    display: unset;
+  }
+  .plane {
+    display: none;
+  }
+  .vj-body {
+    background: url('../images/bg-blur@2x.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100%;
+  }
+  .section-logo {
+    /* display: none; */
+    visibility: hidden;
+  }
+  .title-content {
+    /* display: none; */
+    visibility: hidden;
+  }
+  .section-form {
+    margin-top: 100px;
+  }
+}
+
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Styles */
@@ -258,29 +299,13 @@
     margin: 0;
     padding: 0;
   }
-  .vj-body {
-    background: url('../images/bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-  }
-  .vj-body.bg-blur {
-    background: url('../images/bg-blur-2@2x.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    height: 100%;
-    z-index: 1;
-    position: relative;
-    overflow-y: scroll;
-  }
   .img-footer__mobile {
     position: fixed;
     right: -1px;
     bottom: -1px;
   }
   .img-footer__mobile img {
-    width: 200px;
+    width: 100px;
   }
   .title-content .title {
     font-size: 26px;
@@ -334,11 +359,8 @@
     background-repeat: no-repeat;
     background-position: bottom;
   } */
-  .img-footer__mobile {
-    display: none;
-  }
   .img-footer__mobile img {
-    width: 200px;
+    width: 100px;
   }
   .title-content .title {
     font-size: 26px;
@@ -422,9 +444,6 @@
     width: 425px;
     margin-top: 0px;
   }
-  .img-footer__mobile {
-    display: none;
-  }
   .form-main .label-mobile,
   .form-main .form-title {
     display: none;
@@ -447,7 +466,7 @@
   }
 }
 
-@media only screen and (max-device-width: 539px) {
+@media only screen and (max-device-width: 768px) {
   .comeback {
     margin-right: unset;
   }
@@ -460,6 +479,13 @@
   }
   .set-res:nth-child(1) {
     margin-top: 20px;
+  }
+  #form-abc {
+    width: 340px;
+    margin: auto;
+  }
+  .fwk-main_content__section {
+    width: unset;
   }
 }
 
@@ -538,6 +564,18 @@
   .fwk-register-form {
     width: 100%;
     margin-top: 50px;
+  }
+}
+
+@media only screen and (max-device-width: 560px) {
+  .fwk-button {
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (max-device-width: 479px) {
+  .progressbar li:after {
+    left: -95% !important;
   }
 }
 
