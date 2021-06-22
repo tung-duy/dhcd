@@ -29,12 +29,12 @@
   }
   .img-footer__mobile {
     position: fixed;
-    right: -1px;
-    bottom: -1px;
+    right: 0px;
+    bottom: 0px;
   }
-  .img-footer__mobile img {
+  /* .img-footer__mobile img {
     width: 100px;
-  }
+  } */
   .title-content .sub1-title,
   .title-content .sub2-title {
     /* display: none; */
@@ -151,12 +151,12 @@
   }
   .img-footer__mobile {
     position: fixed;
-    right: -1px;
-    bottom: -1px;
+    right: 0px;
+    bottom: 0px;
   }
-  .img-footer__mobile img {
+  /* .img-footer__mobile img {
     width: 100px;
-  }
+  } */
   .title-content .title {
     font-size: 14px;
   }
@@ -204,8 +204,8 @@
   }
   .img-footer__mobile {
     position: fixed;
-    right: -1px;
-    bottom: -1px;
+    right: 0px;
+    bottom: 0px;
   }
   .form-main .label-pc {
     display: none;
@@ -253,7 +253,7 @@
     position: absolute;
     right: 50px;
     top: 380px;
-}
+  }
 
   .form-main {
     margin-right: 90px;
@@ -288,9 +288,9 @@
   .section-form {
     margin-top: 100px;
   }
-  .set-size {
+  /* .set-size {
     width: 90px;
-  }
+  } */
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -302,12 +302,12 @@
   }
   .img-footer__mobile {
     position: fixed;
-    right: -1px;
-    bottom: -1px;
+    right: 0px;
+    bottom: 0px;
   }
-  .img-footer__mobile img {
+  /* .img-footer__mobile img {
     width: 100px;
-  }
+  } */
   .title-content .title {
     font-size: 26px;
   }
