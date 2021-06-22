@@ -96,7 +96,8 @@ html {
   padding: 32px;
   border-radius: 8px;
   box-shadow: 0 2px 8px 0 rgba(9, 30, 66, 0.2);
-  min-width: 466px;
+  min-width: 500px;
+  opacity: 0.95;
 }
 .form-main input {
   font-size: 14px;
@@ -164,8 +165,8 @@ html {
 .section-title .title {
   font-size: 36px;
   font-weight: bold;
-  font-family: jamBono;
   color: #ff0000;
+  padding: 0 10px;
 }
 
 .section-title .sub1-title {
