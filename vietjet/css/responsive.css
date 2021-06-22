@@ -241,14 +241,14 @@
   .form-main {
     margin-right: 115px;
   }
-}
-
-@media only screen and (min-device-width: 1200px) {
   .section-form {
     position: absolute;
     top: 400px;
-    right: 120px;
-  }
+    right: 156px;
+}
+}
+
+@media only screen and (min-device-width: 1200px) {
   .fwk-main_content__section {
     position: absolute;
     right: 50px;
@@ -260,8 +260,16 @@
 }
 
 @media only screen and (min-device-width: 1200px) and (max-device-width: 1365px) {
+  .section-form {
+    position: absolute;
+    top: 400px;
+    right: 120px;
+  }
   .form-main {
     margin-right: -15px !important;
+  }
+  .layout-home {
+    margin-right: -80px;
   }
 }
 
@@ -270,6 +278,14 @@
 }
 
 @media only screen and (max-device-width: 1199px) {
+  .fwk-main_content__section {
+    margin-top: 300px;
+  }
+  .fwk-steps {
+    background-color: white;
+    opacity: 0.9;
+    border-radius: 50px;
+  }
   .logovj {
     display: unset;
   }
