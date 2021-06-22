@@ -207,9 +207,6 @@
     right: -1px;
     bottom: -1px;
   }
-  .img-footer__mobile img {
-    width: 100px;
-  }
   .form-main .label-pc {
     display: none;
   }
@@ -261,6 +258,9 @@
   .form-main {
     margin-right: 90px;
   }
+  .set-size {
+    width: 150px !important;
+  }
 }
 
 @media only screen and (max-device-width: 1199px) {
@@ -287,6 +287,9 @@
   }
   .section-form {
     margin-top: 100px;
+  }
+  .set-size {
+    width: 90px;
   }
 }
 
@@ -357,9 +360,6 @@
     background-repeat: no-repeat;
     background-position: bottom;
   } */
-  .img-footer__mobile img {
-    width: 100px;
-  }
   .title-content .title {
     font-size: 26px;
   }

@@ -22,12 +22,20 @@ html {
   position: relative;
 }
 @font-face {
-  font-family: Roboto;
-  src: url('../font/Roboto-Medium.ttf');
+  font-family: Bai Jamjuree;
+  src: url('../font/BaiJamjuree-Regular.ttf');
+}
+@font-face {
+  font-family: Bai Jamjuree Bold;
+  src: url('../font/BaiJamjuree-Bold.ttf');
+}
+@font-face {
+  font-family: Bai Jamjuree SemiBold;
+  src: url('../font/BaiJamjuree-SemiBold.ttf');
 }
 #fwk-body {
   overflow: scroll;
-  font-family: 'Bai Jamjuree', sans-serif;
+  font-family: Bai Jamjuree;
 }
 .fwk-main_content__section {
   width: 800px;
