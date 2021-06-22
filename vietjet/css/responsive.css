@@ -110,6 +110,13 @@
     margin-bottom: 50px;
   }
 } */
+
+@media only screen and (min-device-width: 721px) and (max-device-width: 767px) {
+  .title-content .sub1-title {
+    font-size: 16px;
+}
+}
+
 @media only screen and (min-device-width: 72px) and (max-device-width: 767px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
   .fwk-form-btn {
     display: flex;
@@ -239,7 +246,7 @@
 
 @media only screen and (min-device-width: 1366px) {
   .form-main {
-    margin-right: 115px;
+    margin-right: 75px;
   }
   .section-form {
     position: absolute;
@@ -266,21 +273,141 @@
     right: 120px;
   }
   .form-main {
-    margin-right: -15px !important;
+    margin-right: 5px !important;
   }
   .layout-home {
     margin-right: -80px;
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
-  
+@media only screen and (min-device-width: 1200px) {
+  .set-mrtop {
+    margin-top: 10px !important;
+  }
+  .set-mrtop .sub1-title {
+    margin: 10px 0;
+  }
+  .set-mrtop .sub2-title {
+    margin: 10px 0;
+  }
+  .fwk-hd-choose__content {
+    margin-top: 10px;
+  }
+  .set-padding {
+    padding: 10px 90px !important;
+}
+.upload-block .upload-block_thumbnail {
+  margin-bottom: 10px;
+}
+.set-color {
+  padding: 5px 32px !important;
+}
+.progressbar {
+  margin: 10px auto 0;
+}
+.fwk-main_content__section .center {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.fwk-main_content__section {
+  right: 90px;
+}
+}
+
+@media only screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+  .set-mrtop {
+    margin-top: 10px !important;
+  }
+  .set-mrtop .sub1-title {
+    margin: 10px 0;
+  }
+  .set-mrtop .sub2-title {
+    margin: 10px 0;
+  }
+  .fwk-main_content__section {
+    margin-top: 200px;
+  }
+  .fwk-hd-choose__content {
+    margin-top: 20px;
+  }
+  .set-padding {
+    padding: 10px 90px !important;
+}
+.upload-block .upload-block_thumbnail {
+  margin-bottom: 10px;
+}
+.progressbar {
+  margin: 50px auto 0;
+}
+.fwk-main_content__section .center {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  .set-mrtop {
+    margin-top: 10px !important;
+  }
+  .set-mrtop .sub1-title {
+    margin: 10px 0;
+  }
+  .set-mrtop .sub2-title {
+    margin: 10px 0;
+  }
+  .fwk-main_content__section {
+    margin-top: 200px;
+  }
+  .fwk-hd-choose__content {
+    margin-top: 10px;
+  }
+  .set-padding {
+    padding: 10px 90px !important;
+}
+.upload-block .upload-block_thumbnail {
+  margin-bottom: 10px;
+}
+.fwk-main_content__section .center {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+}
+
+@media only screen and (max-device-width: 767px) {
+  .set-mrtop {
+    margin-top: 10px !important;
+  }
+  .fwk-main_content__section {
+    margin-top: 200px;
+}
+  .progressbar {
+    margin: 20px auto 0;
+  }
+  .fwk-hd-choose__content {
+    margin-top: 15px;
+  }
+  .upload-block .upload-block_thumbnail {
+    margin-bottom: 10px;
+  }
+  .btnUpload {
+    padding: 3px 16px;
+  }
+  .set-padding {
+    padding: 10px 90px !important;
+}
+.fwk-main_content__section .center {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.set-color {
+  padding: 5px 32px !important;
+}
+.set-res:nth-child(1) {
+  margin-top: 10px !important;
+}
 }
 
 @media only screen and (max-device-width: 1199px) {
-  .fwk-main_content__section {
-    margin-top: 300px;
-  }
   .fwk-steps {
     background-color: white;
     opacity: 0.9;
@@ -301,7 +428,6 @@
   }
   .section-title {
     margin-top: 55px;
-    position: fixed;
     right: unset;
   }
   .section-form {
@@ -548,7 +674,7 @@
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 991px) {
 .section-form {
-  margin-top: 350px;
+  margin-top: 280px;
 }
 .vj-body {
   background-position: 0 -130px;
@@ -557,7 +683,7 @@
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
   .section-form {
-    margin-top: 280px;
+    margin-top: 240px;
 }
 }
 
@@ -622,7 +748,7 @@
     height: 50px;
   }
   .section-form {
-    margin-top: 270px;
+    margin-top: 200px;
   }
 }
 
