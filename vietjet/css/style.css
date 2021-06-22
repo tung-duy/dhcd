@@ -34,7 +34,6 @@ html {
   src: url('../font/KoHo-Medium.ttf');
 }
 #fwk-body {
-  overflow: scroll;
   font-family: KoHo;
 }
 .fwk-main_content__section {
