@@ -259,7 +259,7 @@
     margin-right: 90px;
   }
   .set-size {
-    width: 150px !important;
+    width: 200px !important;
   }
 }
 
@@ -485,6 +485,17 @@
   .fwk-main_content__section {
     width: unset;
   }
+  .fwk-form-btn {
+    display: unset;
+    justify-content: unset;
+  }
+  .fwk-form-btn button {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .fwk-form-btn button {
+    font-size: 13px
+  }
 }
 
 /* iPhone 4 ----------- */
@@ -543,9 +554,6 @@
     width: 100%;
     display: block;
   }
-  .fwk-button {
-    margin-bottom: 16px;
-  }
   #fwk-register {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -562,12 +570,6 @@
   .fwk-register-form {
     width: 100%;
     margin-top: 50px;
-  }
-}
-
-@media only screen and (max-device-width: 560px) {
-  .fwk-button {
-    margin-bottom: 16px;
   }
 }
 

@@ -22,20 +22,20 @@ html {
   position: relative;
 }
 @font-face {
-  font-family: Bai Jamjuree;
-  src: url('../font/BaiJamjuree-Regular.ttf');
+  font-family: Jambono Medium;
+  src: url('../font/Jambono\ Medium.ttf');
 }
 @font-face {
-  font-family: Bai Jamjuree Bold;
-  src: url('../font/BaiJamjuree-Bold.ttf');
+  font-family: Jambono Bold;
+  src: url('../font/Jambono\ Black.ttf');
 }
 @font-face {
-  font-family: Bai Jamjuree SemiBold;
-  src: url('../font/BaiJamjuree-SemiBold.ttf');
+  font-family: KoHo;
+  src: url('../font/KoHo-Medium.ttf');
 }
 #fwk-body {
   overflow: scroll;
-  font-family: Bai Jamjuree;
+  font-family: KoHo;
 }
 .fwk-main_content__section {
   width: 800px;
@@ -130,10 +130,12 @@ html {
 
 .fwk-form-btn {
   margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
 }
 .fwk-form-btn button {
-  width: 100%;
-  padding: 12px 145.1px 12px 130.9px;
+  width: 190px;
+  padding: 12px 6px;
   border-radius: 8px;
   background-image: linear-gradient(
     80deg,
@@ -177,8 +179,17 @@ html {
   text-transform: initial;
   color: #58595b;
 }
-.title-content {
+.title-content h2 {
   text-align: center;
+  font-family: Jambono Bold !important;
+}
+.title-content h3 {
+  text-align: center;
+  font-family: Jambono Medium;
+}
+.title-content p {
+  text-align: center;
+  font-family: Jambono Medium;
 }
 .title-img {
   width: 800px;
