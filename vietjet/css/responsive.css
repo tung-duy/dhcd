@@ -249,6 +249,13 @@
 }
 
 @media only screen and (min-device-width: 1366px) {
+  .fwk-main_content__section {
+    top: 380px;
+    right: 90px;
+}
+}
+
+@media only screen and (min-device-width: 1366px) {
   .form-main {
     margin-right: 75px;
   }
@@ -268,13 +275,13 @@
 }
 .img-footer__mobile {
 position: fixed;
-right: 30px;
-bottom: 22px;
+/* right: 30px;
+bottom: 22px; */
 /* width: 100px; */
 }
-.set-mrtop {
+/* .set-mrtop {
 margin-top: 160px !important;
-}
+} */
 .fwk-main_content__section {
 position: absolute;
 top: 535px;
@@ -312,6 +319,9 @@ top: 535px;
 }
 .set-avd {
   height: 115%;
+}
+.section-title {
+  margin-top: 45px !important;
 }
 }
 
@@ -400,9 +410,6 @@ top: 535px;
 }
 
 @media only screen and (max-device-width: 767px) {
-  .fwk-main_content__section {
-    margin-top: 200px;
-}
   .progressbar {
     margin: 20px auto 0;
   }
@@ -429,7 +436,8 @@ top: 535px;
   margin-top: 10px !important;
 }
 .fwk-main_content__section {
-  margin-top: 700px;
+  margin-top: 760px;
+  margin-bottom: 20px;
 }
 .vj-upload {
   height: unset !important;
@@ -455,8 +463,11 @@ top: 535px;
     background-position: center -20px;
     height: unset;
   }
+  .set-avd {
+    background-position: center 0px;
+  }
   .section-title {
-    margin-top: 100px;
+    margin-top: 65px;
     right: unset;
   }
   .section-form {
@@ -470,6 +481,9 @@ top: 535px;
   * {
     margin: 0;
     padding: 0;
+  }
+  .section-title {
+    margin-top: 30px;
   }
   .img-footer__mobile {
     position: fixed;
@@ -503,6 +517,9 @@ top: 535px;
   .img-footer__mobile {
     width: 100px;
   }
+  .set-height {
+    height: 100%;
+  }
 }
 
 /* iPads (landscape) ----------- */
@@ -519,18 +536,15 @@ top: 535px;
 }
 
 /* iPads Pro (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 1025px) and (max-device-width: 1366px) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
   /* Styles */
   * {
     margin: 0;
     padding: 0;
   }
-  /* .vj-body {
-    background: url('../images/bg.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-  } */
+  .section-title {
+    margin-top: 45px;
+}
   .title-content .title {
     font-size: 26px;
   }
@@ -549,6 +563,19 @@ top: 535px;
   .title-img {
     width: 800px;
   }
+  .set-height-reg {
+    height: 100%;
+  }
+  /* .fwk-main_content__section {
+    margin-top: 1000px;
+} */
+}
+
+@media only screen and (min-device-width: 1367px) {
+  .fwk-main_content__section {
+    top: 380px;
+  right: 90px;
+}
 }
 
 /* iPads pro (landscape) ----------- */
@@ -562,6 +589,17 @@ top: 535px;
     width: 425px;
     margin-top: 0px;
   }
+  .set-height .set-height {
+    right: 50px;
+  }
+  .section-form {
+    position: absolute;
+    top: 550px;
+    right: 30px;
+}
+.section-title {
+  margin-top: 195px;
+}
 }
 
 /* iPads (portrait) ----------- */
@@ -576,8 +614,16 @@ top: 535px;
     margin-top: 0px;
   }
   .fwk-main_content__section {
-    margin-top: 800px;
-  }
+    margin-top: 990px;
+    margin-bottom: 20px;
+}
+  .section-form {
+    margin-top: 850px !important;
+    margin-bottom: 20px;
+}
+.set-height {
+  height: 105%;
+}
 }
 /**********
     iPad 3
@@ -715,7 +761,7 @@ top: 535px;
   width: 100px !important;
 }
 .fwk-main_content__section {
-  margin-top: 800px;
+  margin-top: 990px;
 }
 }
 
@@ -727,7 +773,7 @@ top: 535px;
     background-position: 0 -250px;
   }
   .section-form {
-    margin-top: 920px !important;
+    margin-top: 1070px !important;
     margin-bottom: 20px;
   }
   }
@@ -744,11 +790,12 @@ top: 535px;
   height: unset;
 }
 .section-form {
-  margin-top: 750px !important;
-  margin-bottom: 9px;
+  margin-top: 890px !important;
+  margin-bottom: 20px;
 }
 .fwk-main_content__section {
-  margin-top: 700px;
+  margin-top: 860px;
+  margin-bottom: 20px;
 }
 }
 
@@ -760,7 +807,8 @@ top: 535px;
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .section-form {
-    margin-top: 750px !important;
+    margin-top: 900px !important;
+    margin-bottom: 20px;
 }
 .img-footer__mobile {
   width: 100px !important;
@@ -786,7 +834,8 @@ top: 535px;
     margin-top: 0px;
   }
   .fwk-main_content__section {
-    margin-top: 500px !important;
+    margin-top: 450px !important;
+    margin-bottom: 20px;
 }
   .progressbar {
     justify-content: space-between;
@@ -835,13 +884,18 @@ top: 535px;
   }
   .vj-body {
     background-size: contain;
+      background-position: 0px 0px;
 }
 .section-form {
-  margin-top: 500px !important;
+  margin-top: 470px !important;
+  margin-bottom: 20px;
 }
 .section-title {
-  margin-top: 60px;
+  margin-top: 40px;
   right: unset;
+}
+.img-footer__mobile {
+  width: 65px !important;
 }
 }
 
