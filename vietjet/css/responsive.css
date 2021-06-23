@@ -55,7 +55,7 @@
   }
   .form-main {
     min-width: initial;
-    width: 340px;
+    width: 300px;
   }
   .form-main input {
     font-size: 12px;
@@ -249,22 +249,16 @@
 }
 
 @media only screen and (min-device-width: 1366px) {
-  .fwk-main_content__section {
-    top: 380px;
-    right: 90px;
-}
-}
-
-@media only screen and (min-device-width: 1366px) {
   .form-main {
     margin-right: 75px;
   }
   .section-form {
     position: absolute;
     top: 400px;
-    right: 156px;
+    right: 65px;
 }
 .fwk-main_content__section {
+  top: 380px;
   right: 90px;
 }
 .vj-body {
@@ -595,10 +589,14 @@ top: 535px;
   .section-form {
     position: absolute;
     top: 550px;
-    right: 30px;
+    right: 5px;
 }
 .section-title {
   margin-top: 195px;
+}
+.layout-home .btn-home button {
+  width: 230px;
+  padding: 14px 38.9px 14px 42px;
 }
 }
 
@@ -637,6 +635,13 @@ top: 535px;
   .fwk-register-form {
     width: 425px;
     margin-top: 0px;
+  }
+}
+
+@media only screen and (min-device-width: 736px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .layout-home .btn-home button {
+    width: 225px;
+    padding: 14px 38.9px 14px 40px;
   }
 }
 
@@ -807,7 +812,7 @@ top: 535px;
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
   .section-form {
-    margin-top: 900px !important;
+    margin-top: 800px !important;
     margin-bottom: 20px;
 }
 .img-footer__mobile {

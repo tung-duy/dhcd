@@ -212,8 +212,9 @@ html {
 
 /* HOme */
 .layout-home .btn-home button {
-  width: 320px;
+  width: 270px;
   padding: 14px 65.9px 14px 42px;
+  margin-right: 10px;
   border-radius: 8px;
   font-weight: 600;
   display: flex;
