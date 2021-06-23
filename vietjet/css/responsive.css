@@ -897,6 +897,10 @@ top: 535px;
 .img-footer__mobile {
   width: 65px !important;
 }
+.title-content .title {
+  font-size: 13px;
+  padding: 0px;
+}
 }
 
 @media only screen and (max-device-width: 479px) {
