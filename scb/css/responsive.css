@@ -844,7 +844,7 @@ top: 400px;
     margin-top: -50px;
   }
   #main-content {
-    padding: 175px;
+    padding: 80px;
   }
   .upload-content {
     display: block;
@@ -912,7 +912,7 @@ top: 400px;
       background-position: 0px 0px;
 }
 .text {
-  width: 325px;
+  width: 290px;
 }
 .section-form {
   margin-top: 80px !important;
