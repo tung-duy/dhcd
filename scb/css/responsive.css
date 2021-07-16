@@ -55,7 +55,11 @@
   }
   .form-main {
     min-width: initial;
-    width: 300px;
+    width: 320px;
+    padding: 15px;
+  }
+  .register {
+    font-size: 19px !important;
   }
   .form-main input {
     font-size: 12px;
@@ -89,6 +93,18 @@
   .title-img {
     width: 300px;
     margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-device-width: 320px) {
+  .form-main {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-device-width: 400px) and (max-device-width: 480px) {
+  .form-main {
+    width: 360px;
   }
 }
 
@@ -432,6 +448,13 @@ top: 400px;
 }
 }
 
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1199px) {
+  .vj-body {
+    height: unset;
+  }
+}
+
 @media only screen and (max-device-width: 1199px) {
   .logovj {
     display: unset;
@@ -450,7 +473,6 @@ top: 400px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center -20px;
-    height: unset;
   }
   .set-avd {
     background-position: center 0px;
@@ -651,7 +673,7 @@ top: 400px;
     margin-top: 0px;
   }
   #main-content {
-    padding: 315px;
+    padding: 322px;
   }
   .title-content {
     width: 675px;
@@ -689,6 +711,16 @@ top: 400px;
   }
 }
 
+@media only screen and (max-device-width: 360px) {
+  #form-abc {
+    width: 298px !important;
+}
+.progressbar li:after {
+  left: -70% !important;
+  width: 120%;
+}
+}
+
 @media only screen and (max-device-width: 768px) {
   .comeback {
     margin-right: unset;
@@ -704,7 +736,7 @@ top: 400px;
     margin-top: 20px;
   }
   #form-abc {
-    width: 300px;
+    width: 340px;
     margin: auto;
   }
   .fwk-main_content__section {
@@ -831,7 +863,40 @@ top: 400px;
 
 @media only screen and (min-device-width: 410px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   #main-content.fix-white-space {
-    padding: 180px !important;
+    padding: 192px !important;
+}
+}
+@media only screen and (max-device-width: 320px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  #main-content {
+    padding: 54px !important;
+}
+  #main-content.fix-white-space {
+    padding: 65px !important;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 376px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .fwk-steps .progressbar li:after {
+    left: -82% !important;
+    width: 128%;
+}
+}
+
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 400px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .progressbar li:after {
+    left: -70% !important;
+    width: 120%;
+}
+  .fix-white-space {
+    padding: 175px !important;
+}
+}
+
+@media only screen and (min-device-width: 400px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .progressbar li:after {
+    left: -90% !important;
+    width: 140%;
 }
 }
 
@@ -846,12 +911,18 @@ top: 400px;
     padding-right: 5px;
     margin-right: 5px;
 }
+.vj-body {
+  height: 100% !important;
+}
+#fwk-body.set-avd {
+  height: unset !important;
+}
 .right .dhcd {
   font-size: 17px;
 }
-.fix-white-space {
+/* .fix-white-space {
   padding: 150px !important;
-}
+} */
   .section-title {
     margin-top: -40px;
   }
@@ -859,7 +930,7 @@ top: 400px;
     margin-top: -50px;
   }
   #main-content {
-    padding: 150px;
+    padding: 90px;
   }
   .upload-content {
     display: block;
@@ -874,14 +945,14 @@ top: 400px;
     margin-top: 0px;
   }
   .fwk-main_content__section {
-    margin-top: 0px !important;
+    margin-top: -40px !important;
     margin-bottom: 20px;
 }
   .progressbar {
     justify-content: space-between;
   }
-  .progressbar li:after {
-    left: -115%;
+  /* .progressbar li:after {
+    left: -100% !important;
     width: 140%;
     -moz-left: -115%;
     -webkit-left: -115%;
@@ -891,7 +962,7 @@ top: 400px;
     -webkit-with: 140%;
     -o-with: 140%;
     -ms-with: 140%;
-  }
+  } */
   .progressbar li {
     width: auto;
   }
@@ -924,7 +995,7 @@ top: 400px;
   }
   .vj-body {
     background-size: cover;
-      background-position: 0px 0px;
+    background-position: 0px 0px;
 }
 .section-form {
   margin-top: 80px !important;
@@ -951,7 +1022,7 @@ top: 400px;
   width: 100%;
 }
 .section-form {
-  margin-top: 80px !important;
+  margin-top: 30px !important;
 }
 /* #main-content {
 padding: 135px;
@@ -978,9 +1049,7 @@ font-size: 7px;
 }
 
 @media only screen and (max-device-width: 479px) {
-  .progressbar li:after {
-    left: -95% !important;
-  }
+
 }
 
 @media only screen and (min-device-width: 409px) and (max-device-width: 680px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
