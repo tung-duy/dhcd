@@ -837,6 +837,9 @@ top: 400px;
 .right .dhcd {
   font-size: 17px;
 }
+.fix-white-space {
+  padding: 100px !important;
+}
   .section-title {
     margin-top: -40px;
   }
