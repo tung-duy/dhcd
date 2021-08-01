@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ĐẠI HỘI ĐỒNG CỔ ĐÔNG THƯỜNG NIÊN 2021</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/hdBank.style.css" />
+    <script
+      src="https://kit.fontawesome.com/9fa84a5f36.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="fwk-gtn">
+      <main id="fwk-register">
+        <!-- <img src="images/bg-bottom.png" alt="" /> -->
+        <div class="container-fluid">
+          <div class="row fwk-row-custom">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+              <section class="fwk-introduction">
+                <div class="fwk-logo">
+                  <img
+                    src="./images/logo_hdbank.svg"
+                    alt="logo HD Bank"
+                  />
+                </div>
+                <div class="fwk-content">
+                  <h2 class="fwk-company-name">
+                    HDBANK
+                    <br />
+                    ĐẠI HỘI ĐỒNG CỔ ĐÔNG THƯỜNG NIÊN 2021
+                  </h2>
+                  <!-- <h2></h2> -->
+                  <h3 class="fwk-sub-content">
+                    2021 annual general meeting of shareholders
+                  </h3>
+                  <p class="fwk-address">
+                    TP.HCM, ngày 23 tháng 04 năm 2021
+                  </p>
+                </div>
+              </section>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+              <section class="fwk-register-form vote-page">
+                <h3>biểu quyết online - nhập thông tin cổ đông</h3>
+                <hr />
+                <form class="fwk-form fwk-vote">
+                  <div class="form-group">
+                    <label for="fullName"
+                      >Mã cổ đông <span class="required">*</span></label
+                    >
+                    <div class="input-group">
+                      <i class="fa fa-th" aria-hidden="true"></i>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="fullName"
+                        placeholder="Nhập mã cổ đông"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="fwk-form-btn">
+                    <button class="btn btn-primary fwk-button vote-btn">
+                      Tham gia biểu quyết
+                    </button>
+                  </div>
+                </form>
+                <form class="fwk-form check-otp d-none">
+                  <div class="form-group">
+                    <label for="fullName"
+                      >Mã cổ đông <span class="required">*</span></label
+                    >
+                    <div class="input-group">
+                      <i class="fa fa-th" aria-hidden="true"></i>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="fullName"
+                        placeholder="Nhập mã cổ đông"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="fwk-notify">
+                    Chúng tôi đã gửi 1 mã xác thực đến số điện thoại <span>0977689990, vui lòng kiểm tra tin nhắn và nhập mã xác thực vào ô sau:</span>
+                  </div>
+                  <div class="form-group">
+                    <label for="fullName"
+                      >Mã xác thực</label
+                    >
+                    <div class="input-group">
+                      <i class="fa fa-th" aria-hidden="true"></i>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="fullName"
+                        placeholder="Nhập mã xác thực"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="fwk-form-btn">
+                    <button class="btn btn-primary fwk-button">
+                      Kiểm tra OTP
+                    </button>
+                  </div>
+                </form>
+              </section>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $('.vote-btn').click(function (e) { 
+        e.preventDefault()
+        $('.fwk-vote').addClass('d-none')
+        $('.check-otp').removeClass('d-none')
+       })
+      const links = $("link");
+      console.log(links);
+    </script>
+  </body>
+</html>
