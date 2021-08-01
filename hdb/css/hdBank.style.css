@@ -37,7 +37,7 @@ body::before {
   background: url("../images/flowers.svg") no-repeat;
   width: 13%;
   height: 45%;
-  right: -35px;
+  right: -38px;
   top: -35px;
   position: absolute;
 }
@@ -475,7 +475,7 @@ font-size: 16px;
     margin-bottom: 100px;
   }
   #fwk-gtn {
-    height: 130%
+    height: 140%
   }
 }
 
