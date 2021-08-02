@@ -12,6 +12,7 @@ body {
   color: #091e42;
   font-size: 13px;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .fwk-notify {
@@ -380,10 +381,10 @@ body {
 
 @media only screen and (max-device-width: 480px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   #fwk-gtn .content-css .fwk-content h2 {
-    font-size: 11px;
+    font-size: 13px;
   }
   #fwk-gtn .content-css .fwk-content h3 {
-    font-size: 11px;
+    font-size: 13px;
     margin-top: -5px;
   }
   #fwk-gtn .content-css .fwk-content .type1 {
@@ -401,16 +402,25 @@ body {
     margin-top: -15px;
   }
   #fwk-gtn .content-css .fwk-content .type5 {
-    font-size: 11px;
+    font-size: 10px;
   }
   #fwk-gtn {
     height: 160%;
+  }
+  .pd-mb {
+    padding: unset;
   }
 }
 
 @media only screen and (max-device-width: 320px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
   #fwk-gtn {
     height: 186%;
+  }
+  #fwk-gtn .content-css .fwk-content .type5 {
+    font-size: 9px;
+  }
+  #fwk-gtn .content-css .fwk-content .type1 {
+    font-size: 9px;
   }
 }
 
@@ -474,9 +484,6 @@ body {
   }
   .content-css .fwk-content h2 {
     font-size: 32px;
-  }
-  .fwk-logo {
-    margin-bottom: 100px;
   }
   #fwk-gtn {
     height: 140%;
