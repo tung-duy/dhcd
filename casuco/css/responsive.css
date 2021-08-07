@@ -378,9 +378,9 @@ top: 400px;
 .upload-block .upload-block_thumbnail {
   margin-bottom: 10px;
 }
-.progressbar {
+/* .progressbar {
   margin: 50px auto 0;
-}
+} */
 .fwk-main_content__section .center {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -412,6 +412,13 @@ top: 400px;
 }
 }
 
+@media only screen and (max-device-width: 667px) {
+  .fwk-main_content__section {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+}
+
 @media only screen and (max-device-width: 767px) {
   .progressbar {
     margin: 20px auto 0;
@@ -440,7 +447,7 @@ top: 400px;
   margin-top: 10px !important;
 }
 .fwk-main_content__section {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   margin-bottom: 20px;
 }
 .vj-upload {
