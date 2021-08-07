@@ -440,6 +440,7 @@ upload-block {
   ); */
   background-color: #009933;
   color: white;
+  border: 1px solid white;
   font-weight: 600;
   padding: 12px 32px !important;
   border-radius: 8px !important;
