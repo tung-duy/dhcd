@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Virtual meeting</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css?ver=1.0" />
+  </head>
+  <body class="vr-body">
+    <header id="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-9 col-md-8">
+            <img class="header-logo img-fluid" src="images/company/logo-light.svg" alt="Logo" />
+            <h1 class="page-title trans">Virtual Annual General Meetings</h1>
+          </div>
+
+          <div class="col-3 col-md-4 text-right">
+            <div class="header-right">
+              <a class="text-hotline" href="tel:+84 287 3028 999">
+                <img src="images/icons/icon-phone-gray.svg" />
+                <span class="trans">Hotline</span>:  <span class="value" data-key="hotline">+84 287 3028 999</span>
+              </a>
+              
+              <div class="btn-group lang-group">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <img class="img-fluid" src="images/flags/en.svg" />
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <ul class="language-list">
+                    <li>
+                      <strong class="trans">Display language</strong>
+                    </li>
+                    <li class="lang-item lang-vi">
+                        <a class="dropdown-item" href="#" data-lang="vi">
+                          <img class="icon-flag" src="images/flags/vi.svg" />
+                          <span>Tiếng Việt</span>
+                        </a>
+                    </li>
+                    <li class="lang-item lang-en current-lang">
+                        <a class="dropdown-item" href="#" data-lang="en">
+                          <img class="icon-flag" src="images/flags/en.svg" />
+                          <span>English</span>
+                          <img src="images/icons/icon-checkmark.svg" class="icon-checkmark" />
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <button class="navbar-toggler menu-icon-open" type="button">
+              <img src="images/icons/icon-menu-mobile-gray.svg" />
+            </button>
+
+            <div id="header_navbar">
+              <div class="navbar-head">
+                <button class="navbar-toggler menu-icon-close" type="button">
+                  <img src="images/icons/icon-close-gray.svg" />
+                </button>
+              </div>
+              <div class="navbar-content"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <section id="main_content">
+      <div class="container-fluid">
+
+        <div class="content-full">
+          
+          <div class="content-box">
+            <a href="#" class="back-btn">
+              <img src="images/icons/icon-arrow-left.svg" />
+              <span class="trans">Back</span>
+            </a>
+            
+            <h2 class="box-title"><span class="trans">Hello</span>, Nguyen Van Khoa</h2>
+            
+            <div class="form-box">
+              <form class="otp-method-form" action="verify-code.html">
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="auth_method" id="auth_method_1" value="SMS" checked>
+                    <label class="form-check-label trans" for="auth_method_1">Authentication by OTP sent via SMS</label>
+                  </div>
+                  
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="auth_method" id="auth_method_2" value="EMAIL">
+                    <label class="form-check-label trans" for="auth_method_2">Authentication by OTP sent via Email</label>
+                  </div>
+                </div>
+                
+                <div class="form-buttons">
+                  <button type="submit" class="btn btn-block btn-main trans text-uppercase">Send verification code</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="copyright">© Copyright FPT Telecom 2021</p>
+
+      </div>
+    </section>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js?ver=1.0"></script>
+  </body>
+</html>
