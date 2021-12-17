@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Verify code</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css?ver=1.0" />
+  </head>
+  <body class="vr-body">
+    <header id="header">
+      <div class="container-fluid">
+        <div class="header-inner">
+          <a href="index.html"><img class="header-logo img-fluid" src="images/company/logo-light.svg" alt="Logo" /></a>
+          <h1 class="page-title trans">Virtual Annual General Meetings</h1>
+          <button class="navbar-toggler menu-icon-open" type="button">
+            <img src="images/icons/icon-menu-mobile-gray.svg" />
+          </button>
+        </div>
+      </div>
+      
+      <div id="header_navbar">
+        <div class="navbar-head">
+          <button class="navbar-toggler menu-icon-close" type="button">
+            <img src="images/icons/icon-close-gray.svg" />
+          </button>
+        </div>
+
+        <div class="navbar-content">
+          <ul class="language-list">
+            <li>
+              <strong class="trans">Display language</strong>
+            </li>
+            <li class="lang-item lang-vi">
+                <a class="dropdown-item" href="#" data-lang="vi">
+                  <span class="radio-icon"></span>
+                  <img class="icon-flag" src="images/flags/vi.svg" />
+                  <span>Tiếng Việt</span>
+                </a>
+            </li>
+            <li class="lang-item lang-en current-lang">
+                <a class="dropdown-item" href="#" data-lang="en">
+                  <span class="radio-icon"></span>
+                  <img class="icon-flag" src="images/flags/en.svg" />
+                  <span>English</span>
+                </a>
+            </li>
+          </ul>
+
+          <a class="text-hotline" href="tel:+84 287 3028 999">
+            <img src="images/icons/icon-phone-gray.svg" />
+            <span class="trans">Hotline</span>: <span class="value" data-key="hotline">+84 287 3028 999</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    
+    <section id="main_content">
+      <div class="container-fluid content-full">
+
+        <div class="content-inner">
+          
+          <div class="content-box">
+            <a href="#" class="back-btn">
+              <img src="images/icons/icon-arrow-left.svg" />
+              <span class="trans">Back</span>
+            </a>
+            
+            <div class="form-box">
+              <h2 class="box-title"><span class="trans">Hello</span>, Nguyen Van Khoa</h2>
+
+              <form class="verify-form">
+                <div class="form-group">
+                  <label><span class="trans method-label">Verification codes</span> <em>*</em></label>
+                  <div class="alert alert-warning trans" role="alert" data-params='{"phone":"097****990"}'>
+                    We have sent 1 verification code to phone number {{phone}}, please check your message and enter the verification code in the box below.<br />If you haven't received the message yet, try sending it again after 180 seconds
+                  </div>
+                  
+                  <div class="input-otps">
+                    <input type="text" class="form-control input-otp" maxlength="1" />
+                    <input type="text" class="form-control input-otp" maxlength="1" />
+                    <input type="text" class="form-control input-otp" maxlength="1" />
+                    <input type="text" class="form-control input-otp" maxlength="1" />
+                    <input type="text" class="form-control input-otp" maxlength="1" />
+                    <input type="text" class="form-control input-otp" maxlength="1" />
+                  </div>
+
+                  <input type="hidden" name="otp" class="otp-field" />
+                </div>
+                
+                <div class="form-buttons">
+                  <button type="submit" class="btn btn-block btn-main trans text-uppercase">Continue</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+        </div>
+
+        <p class="copyright trans">© Copyright FPT Telecom 2021</p>
+
+      </div>
+    </section>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js?ver=1.0"></script>
+    
+    <script>
+      $('.verify-form button[type="submit"]').click(function () {
+        var form = $(this).closest('form');
+        var otp = '';
+        form.find('.input-otp').each(function () {
+          otp += $(this).val();
+        });
+        form.find('.otp-field').val(otp);
+      });
+    </script>
+  </body>
+</html>

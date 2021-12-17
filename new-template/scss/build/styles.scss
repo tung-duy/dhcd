@@ -308,7 +308,7 @@ a {
   .form-check {
     margin-bottom: 12px;
     label {
-      margin-right: 5px;
+      margin-left: 5px;
       font-weight: 400;
     }
   }
@@ -364,7 +364,7 @@ a {
 .alert {
   padding: 16px 20px;
   font-family: 'Roboto', sans-serif;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 .alert-warning {
   background: #fff8e1;
@@ -517,7 +517,7 @@ a {
   }
 }
 
-.copyright-full, .vr-body .copyright {
+.copyright-full, .vr-body .copyright, .copyright-mobile {
   text-align: center;
   margin-top: -32px;
   width: 100%;
