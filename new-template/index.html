@@ -12,15 +12,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/styles.css?ver=1.0" />
+    <link rel="stylesheet" href="css/styles.css?ver=1.1" />
   </head>
   <body>
     <header id="header">
       <div class="container-fluid text-right">
+        <div class="header-mobile text-left d-md-none">
+          <a href="index.html"><img class="header-logo img-fluid" src="images/company/logo-dark.svg" alt="Logo" /></a>
+          <h1 class="page-title trans">Virtual Annual General Meetings</h1>
+        </div>
+
         <div class="header-right">
           <a class="text-hotline" href="tel:+84 287 3028 999">
             <img src="images/icons/icon-phone.svg" />
-            <span class="trans">Hotline</span>: <span class="value" data-key="hotline">+84 287 3028 999</span>
+            <span class="trans">Hotline:</span> <span class="value" data-key="hotline">+84 287 3028 999</span>
           </a>
 
           <div class="btn-group lang-group">
@@ -75,19 +80,21 @@
               <div class="box-inner">
                 <h2 class="box-title trans">Account type</h2>
 
-                <div class="type-item" onclick="window.location.href='login-shareholder.html'">
-                  <img class="type-icon" src="images/icons/icon-bag.svg" />
-                  <div class="item-content">
-                    <h3 class="item-title trans">Shareholder</h3>
-                    <p class="item-desc trans">Login for shareholders of the company</p>
+                <div class="type-items">
+                  <div class="type-item" onclick="window.location.href='login-shareholder.html'">
+                    <img class="type-icon" src="images/icons/icon-bag.svg" />
+                    <div class="item-content">
+                      <h3 class="item-title trans">Shareholder</h3>
+                      <p class="item-desc d-none d-md-block trans">Login for shareholders of the company</p>
+                    </div>
                   </div>
-                </div>
 
-                <div class="type-item" onclick="window.location.href='login-guest.html'">
-                  <img class="type-icon" src="images/icons/icon-group.svg" />
-                  <div class="item-content">
-                    <h3 class="item-title trans">Guest</h3>
-                    <p class="item-desc trans">Login for corporate guests</p>
+                  <div class="type-item" onclick="window.location.href='login-guest.html'">
+                    <img class="type-icon" src="images/icons/icon-group.svg" />
+                    <div class="item-content">
+                      <h3 class="item-title trans">Guest</h3>
+                      <p class="item-desc d-none d-md-block trans">Login for corporate guests</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -118,6 +125,6 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js?ver=1.0"></script>
+    <script src="js/script.js?ver=1.1"></script>
   </body>
 </html>

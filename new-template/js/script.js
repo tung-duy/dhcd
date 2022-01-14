@@ -15,6 +15,7 @@
       'Login': 'Đăng nhập',
       'Shareholder\'s Code/Passport': 'Số ĐKSH, CMND/CCCD',
       'Enter shareholder\'s code/passport': 'Nhập số ĐKSH, CMND/CCCD',
+      'Select verification method': 'Chọn phương thức xác thực',
       'Otp authentication': 'Xác thực qua OTP',
       'eKYC authentication': 'Xác thực qua eKYC',
       'Login for Journalists/Guests': 'Đăng nhập dành cho Nhà báo/Khách mời',
