@@ -38,6 +38,9 @@
       'or': 'hoặc',
       'Open camera': 'Chụp hình',
       'Record Video': 'Qauy video khuôn mặt',
+      'Vote': 'Biểu quyết',
+      'Send': 'Gửi',
+      'Ask question': 'Đặt câu hỏi',
     },
   };
   
@@ -112,12 +115,18 @@
     headerNavbar.append($('#header .lang-group .language-list')[0].outerHTML);
     headerNavbar.append($('#header .header-right .text-hotline')[0].outerHTML);
     headerNavbar.find('.language-list .icon-checkmark').remove();
+    headerNavbar.find('.language-list li a').prepend('<span class="radio-icon"></span>');
   }
-  headerNavbar.find('.language-list li a').prepend('<span class="radio-icon"></span>');
   var phoneSrc = headerNavbar.find('.text-hotline img').attr('src');
   if (phoneSrc) {
     headerNavbar.find('.text-hotline img').attr('src', phoneSrc.replace('icon-phone.svg', 'icon-phone-gray.svg'));
     headerNavbar.find('.text-hotline img').insertBefore(headerNavbar.find('.text-hotline .value'));
+  }
+  
+  if ($('#header .profile-group').length > 0) {
+    headerNavbar.append($('#header .header-right .vote-btn')[0].outerHTML);
+    headerNavbar.append($('#header .header-right .file-btn')[0].outerHTML);
+    headerNavbar.append($('#header .profile-group .profile-links')[0].outerHTML);
   }
   
   $('#header .menu-icon-open').click(function () {
@@ -291,7 +300,7 @@
     stream.getTracks().forEach(track => track.stop());
   }
   
-  $('.identify-form').submit(function () {
+  /*$('.identify-form').submit(function () {
     var form = $(this);
     var passportFile = form.find('input[name="passport_file"]')[0].files[0];
     var identifyImage = form.find('input[name="identify_image"]')[0].files[0];
@@ -321,8 +330,38 @@
       },
     });
     return false;
-  });
+  });*/
   
+  var elCountdown = $('.countdown');
+  var cdMinute = elCountdown.find('.minute');
+  var cdSecond = elCountdown.find('.second');
+  var numCdMin = cdMinute.text() ? parseInt(cdMinute.text()) : 10;
+  var numCdSec = cdSecond.text() ? parseInt(cdSecond.text()) : 0;
+  var countdownInterval = setInterval(function () {
+    if (numCdMin < 1 && numCdSec < 1) {
+      clearInterval(countdownInterval);
+    }
+
+    if (numCdSec === 0) {
+      numCdMin--;
+      numCdSec = 60;
+    }
+    numCdSec--;
+    
+    cdMinute.text(numCdMin < 10 ? '0' + numCdMin : numCdMin);
+    cdSecond.text(numCdSec < 10 ? '0' + numCdSec : numCdSec);
+  }, 1000);
+  
+  $('.input-num-format').blur(function () {
+    var value = $(this).val();
+    if (value) {
+      value = value.replace(/[^0-9]+/g, "");
+      if (value) {
+        value = Intl.NumberFormat('vi-VN').format(value);
+      }
+      $(this).val(value);
+    }
+  });
 
 })(jQuery);
 
