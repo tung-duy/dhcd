@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="icon-logout" transform="translate(-1260 -117)">
+    <rect id="rectangle" width="20" height="20" transform="translate(1260 117)" fill="#5c6a82" opacity="0"/>
+    <path id="vector" d="M7.368,6.569,9.2,4.729V12.4a.8.8,0,1,0,1.6,0V4.729l1.832,1.84a.8.8,0,1,0,1.136-1.136l-3.2-3.2a.827.827,0,0,0-1.136,0l-3.2,3.2A.8.8,0,0,0,7.368,6.569ZM17.2,11.6a.8.8,0,0,0-.8.8v3.2a.8.8,0,0,1-.8.8H4.4a.8.8,0,0,1-.8-.8V12.4a.8.8,0,1,0-1.6,0v3.2A2.4,2.4,0,0,0,4.4,18H15.6A2.4,2.4,0,0,0,18,15.6V12.4A.8.8,0,0,0,17.2,11.6Z" transform="translate(1259.997 137) rotate(-90)" fill="#5c6a82"/>
+  </g>
+</svg>
