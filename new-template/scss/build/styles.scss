@@ -63,15 +63,28 @@ a {
   .file-btn {
     margin-right: 12px;
     img {
-      width: 14px;
+      width: 24px;
     }
   }
   .profile-btn {
     img {
       width: 20px;
     }
+    img.show-active {
+      display: none;
+    }
     &:after {
       display: none;
+    }
+  }
+  .profile-group.show {
+    .profile-btn {
+      img {
+        display: none;
+      }
+      img.show-active {
+        display: inline-block;
+      }
     }
   }
   .navbar-content {
@@ -620,12 +633,21 @@ a {
         padding: 0;
         padding-bottom: 8px;
         margin-right: 20px;
+        img.show-active {
+          display: none;
+        }
       }
       a.active {
         border: none;
         border-bottom: 2px solid #133fa2;
         span {
           background: rgba(19, 63, 162, 0.16);
+        }
+        img {
+          display: none;
+        }
+        img.show-active {
+          display: inline-block;
         }
       }
       a:not(.active) {
@@ -659,9 +681,9 @@ a {
     strong {
       color: #388e3c;
       img {
-        width: 11px;
+        width: 10px;
         vertical-align: baseline;
-        margin-right: 3px;
+        margin-right: 8px;
       }
     }
   }
@@ -713,6 +735,10 @@ a {
 
 #vote_modal {
   z-index: 3001;
+  .modal-header {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
   .modal-title {
     font-size: 20px;
     color: #172b4d;
@@ -720,6 +746,9 @@ a {
   .close {
     font-weight: 300;
     font-size: 30px;
+    &:focus {
+      outline: none;
+    }
   }
   .modal-body {
     padding: 0;
@@ -731,8 +760,9 @@ a {
     padding: 19px;
     color: #fff;
     img {
-      vertical-align: text-top;
-      margin-right: 8px;
+      max-width: 22px;
+      margin-right: 4px;
+      margin-top: -4px;
     }
   }
   .modal-footer {
@@ -815,7 +845,8 @@ a {
     color: #d32f2f;
     text-align: center;
     img {
-      vertical-align: text-top;
+      max-width: 20px;
+      margin-top: -2px;
     }
   }
   .vote-type-box {

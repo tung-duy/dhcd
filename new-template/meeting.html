@@ -26,23 +26,24 @@
           <div class="col-3 col-md-4 text-right">
             <div class="header-right">
               <button class="btn vote-btn trans" data-toggle="modal" data-target="#vote_modal">Vote</button>
-              <a class="file-btn" href="#"><img src="images/icons/file-alt.svg" /></a>
+              <a class="file-btn" href="#"><img src="images/icons/icon-document.svg" /></a>
               
               <div class="btn-group profile-group">
                 <a class="dropdown-toggle profile-btn" href="#" data-toggle="dropdown" aria-expanded="false">
-                  <img class="head-icon" src="images/icons/user-circle.svg" />
+                  <img src="images/icons/icon-user-circle.svg" />
+                  <img class="show-active" src="images/icons/icon-user-fill.svg" />
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
                   <ul class="profile-links">
                     <li>
                         <a class="dropdown-item" href="#" data-lang="vi">
-                          <img class="icon-flag" src="images/icons/user-circle.svg" />
+                          <img class="icon-flag" src="images/icons/icon-user-circle.svg" />
                           <span>Thông tin cổ đông</span>
                         </a>
                     </li>
                     <li>
                         <a class="dropdown-item" href="#" data-lang="en">
-                          <img class="icon-flag" src="images/icons/sign-out-alt.svg" />
+                          <img class="icon-flag" src="images/icons/icon-logout.svg" />
                           <span>Đăng xuất</span>
                         </a>
                     </li>
@@ -74,7 +75,7 @@
         <div class="container-fluid">
           <div class="row meeting-row">
             <div class="col-md-8 col-lg-9 screen-col">
-              <video id="meeting_video" poster="images/video-poster.png">
+              <video id="meeting_video" poster="images/video-screen.png">
                 <source src="video.mp4" type="video/mp4">
               </video>
             </div>
@@ -84,12 +85,18 @@
                 <ul class="nav nav-tabs" role="tablist">
                   <li class="nav-item">
                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#chat_box" role="tab" aria-controls="home" aria-selected="true">
-                      <span><img src="images/icons/comment-alt.svg" /></span>
+                      <span>
+                        <img src="images/icons/icon-chat.svg" />
+                        <img class="show-active" src="images/icons/icon-chat-active.svg" />
+                      </span>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" id="profile-tab" data-toggle="tab" href="#meeting_info_box" role="tab" aria-controls="profile" aria-selected="false">
-                      <span><img src="images/icons/video.svg" /></span>
+                      <span>
+                        <img src="images/icons/icon-video-question.svg" />
+                        <img class="show-active" src="images/icons/icon-video-question-active.svg" />
+                      </span>
                     </a>
                   </li>
                 </ul>
@@ -98,7 +105,7 @@
                   <div class="tab-pane fade show active" id="chat_box" role="tabpanel" aria-labelledby="home-tab">
                     <ul class="chat-list">
                       <li class="mess-admin">
-                        <strong><img src="images/icons/shield-alt.svg" />Admin: </strong>
+                        <strong><img src="images/icons/icon-shield.svg" />Admin: </strong>
                         <span>Đã kết thúc vote BẦU BAN KIỂM SOÁT</span>
                       </li>
                       <li class="mess-self"><strong>Tôi:</strong> <span>Tôi có câu hỏi</span></li>
@@ -131,12 +138,12 @@
             <div class="modal-header">
               <h5 class="modal-title trans">Biểu quyết</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+                <img class="img-icon" src="images/icons/icon-cross.svg" />
               </button>
             </div>
             <div class="modal-body">
               <div class="time-countdown">
-                <img class="img-icon" src="images/icons/clock-white.svg" />
+                <img class="img-icon" src="images/icons/icon-stopwatch.svg" />
                 <span>Thời gian còn lại </span>
                 <span class="countdown">
                   <span class="minute">10</span>:<span class="second">00</span>
@@ -192,9 +199,9 @@
                 <a href="#" class="export-link">Xuất danh sách uỷ quyền</a>
                 
                 <div class="vote-control">
-                  <a href="#" class="btn"><strong>BẦU BAN KIỂM SOÁT</strong> <img class="img-icon" src="images/icons/angle-down.svg" /></a>
+                  <a href="#" class="btn"><strong>BẦU BAN KIỂM SOÁT</strong> <img class="img-icon" src="images/icons/icon-angle-down.svg" /></a>
                   <div class="time-up-box">
-                    <img class="img-icon" src="images/icons/clock-red.svg" /> 
+                    <img class="img-icon" src="images/icons/icon-time-alert.svg" /> 
                     <span> Hết thời gian tham gia bỏ phiếu</span>
                   </div>
                 </div>
