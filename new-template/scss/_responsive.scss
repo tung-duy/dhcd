@@ -141,6 +141,23 @@
   #header_navbar.show {
     left: 0;
   }
+  
+  #header.meeting-header {
+    #header_navbar {
+      height: 63px;
+      @include display-flex;
+      left: auto;
+      right: 105%;
+      .navbar-content {
+        flex: 1;
+        text-align: right;
+      }
+    }
+    #header_navbar.show {
+      left: auto;
+      right: 0;
+    }
+  }
 
   .main-row {
     flex-direction: column-reverse;
@@ -354,6 +371,20 @@
   .activity-col {
     margin-top: 20px;
     max-height: 580px;
+  }
+  
+  .activity-box {
+    .nav-tabs {
+      li {
+        width: 50%;
+        text-align: center;
+        a {
+          margin-right: 0;
+          padding-bottom: 14px;
+          padding-top: 6px;
+        }
+      }
+    }
   }
 }
 
