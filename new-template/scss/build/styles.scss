@@ -87,11 +87,6 @@ a {
       }
     }
   }
-  .navbar-content {
-    .profile-links {
-      margin-top: 30px;
-    }
-  }
 }
 
 #header {
@@ -723,12 +718,14 @@ a {
   padding: 20px 0 8px;
   .info-item {
     padding: 12px;
-    background: #133fa2;
+    background: rgba(0, 0, 0, 0.04);
     border-radius: 4px;
     margin-bottom: 12px;
-    color: #fff;
-    a {
-      text-decoration: underline;
+    color: $textCl;
+    button {
+      text-transform: uppercase;
+      min-height: 44px;
+      border-radius: 6px;
     }
   }
 }

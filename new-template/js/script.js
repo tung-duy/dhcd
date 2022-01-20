@@ -4,7 +4,7 @@
     vi: {
       'Display language': 'Ngôn ngữ hiển thì',
       'Virtual Annual General Meetings': 'Đại hội cổ đông trực tuyến',
-      'Hotline': 'Trợ giúp',
+      'Hotline:': 'Trợ giúp:',
       'Account type': 'Chọn loại đăng nhập',
       'Hanoi': 'Hà Nội',
       'Shareholder': 'Cổ đông',
@@ -41,6 +41,7 @@
       'Vote': 'Biểu quyết',
       'Send': 'Gửi',
       'Ask question': 'Đặt câu hỏi',
+      'Join meeting': 'Tham gia đại hội',
     },
   };
   
@@ -124,9 +125,7 @@
   }
   
   if ($('#header .profile-group').length > 0) {
-    headerNavbar.append($('#header .header-right .vote-btn')[0].outerHTML);
-    headerNavbar.append($('#header .header-right .file-btn')[0].outerHTML);
-    headerNavbar.append($('#header .profile-group .profile-links')[0].outerHTML);
+    headerNavbar.append($('#header .header-right').html());
   }
   
   $('#header .menu-icon-open').click(function () {

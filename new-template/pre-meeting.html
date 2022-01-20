@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Verify code</title>
+    <title>Virtual meeting</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     
@@ -75,66 +75,36 @@
     </header>
     
     <section id="main_content">
+
       <div class="container-fluid">
 
         <div class="content-full">
           
           <div class="content-box">
-            <a href="#" class="back-btn">
-              <img src="images/icons/icon-arrow-left.svg" />
-              <span class="trans">Back</span>
-            </a>
-            
+            <a href="#" class="back-btn"></a>
+
             <div class="form-box">
               <h2 class="box-title"><span class="trans">Hello</span>, Nguyen Van Khoa</h2>
 
-              <form class="verify-form" action="pre-meeting.html">
-                <div class="form-group">
-                  <label><span class="trans">Verification codes</span> <em>*</em></label>
-                  <div class="alert alert-warning trans" role="alert" data-params='{"phone":"097****990"}'>
-                    We have sent 1 verification code to phone number {{phone}}, please check your message and enter the verification code in the box below.<br />If you haven't received the message yet, try sending it again after 180 seconds
-                  </div>
-                  
-                  <div class="input-otps">
-                    <input type="text" class="form-control input-otp" maxlength="1" />
-                    <input type="text" class="form-control input-otp" maxlength="1" />
-                    <input type="text" class="form-control input-otp" maxlength="1" />
-                    <input type="text" class="form-control input-otp" maxlength="1" />
-                    <input type="text" class="form-control input-otp" maxlength="1" />
-                    <input type="text" class="form-control input-otp" maxlength="1" />
-                  </div>
-
-                  <input type="hidden" name="otp" class="otp-field" />
-                </div>
-                
+              <form class="otp-method-form" action="meeting.html">
                 <div class="form-buttons">
-                  <button type="submit" class="btn btn-block btn-main trans text-uppercase">Continue</button>
+                  <button type="submit" class="btn btn-block btn-main trans text-uppercase">Join meeting</button>
                 </div>
               </form>
             </div>
           </div>
-          
+
         </div>
 
-        <p class="copyright trans">© Copyright FPT Telecom 2021</p>
+        <p class="copyright">© Copyright FPT Telecom 2021</p>
 
       </div>
+
     </section>
     
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js?ver=1.1"></script>
-    
-    <script>
-      $('.verify-form button[type="submit"]').click(function () {
-        var form = $(this).closest('form');
-        var otp = '';
-        form.find('.input-otp').each(function () {
-          otp += $(this).val();
-        });
-        form.find('.otp-field').val(otp);
-      });
-    </script>
   </body>
 </html>
