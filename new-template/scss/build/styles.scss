@@ -594,6 +594,10 @@ a {
   height: 100%;
   background: #ccc;
 }
+#meeting_video[poster] {
+  object-fit: cover;
+  width: 100%;
+}
 
 .row.meeting-row {
   margin-left: -6px;
