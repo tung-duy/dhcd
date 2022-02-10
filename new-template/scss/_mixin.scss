@@ -5,6 +5,17 @@ $borderCl: #d0d4db;
 $boxWidth: 384px;
 $headerH: 78px;
 
+$bodyBgColor: #E4E4E4; /* #113D9C;*/
+$maxLogoWidth: 400px; /* 150px;*/
+$mobileMaxLogoWidth: 108px; /* 80px;*/
+$darkTitleColor: #20407f; /* #fff;*/
+$pageDescColor: #27417c; /* #fff;*/
+$dateTextColor: rgba(32, 64, 127, 0.8);
+$headerTextColor: #172b4d;
+$mobileHeaderTextColor: #091e42;
+$mobilePlaceholderColor: #5c6a82;
+$mobileInputColor: #091e42;
+
 @mixin display-flex() {
     display: -ms-flexbox;
     display: flex;

@@ -1,9 +1,9 @@
 (function ($) {
-  
+
   var txtTrans = {
     vi: {
       'Display language': 'Ngôn ngữ hiển thì',
-      'Virtual Annual General Meetings': 'Đại hội cổ đông trực tuyến',
+      'Virtual Annual General Meetings': 'Đại hội đồng cổ đông trực tuyến',
       'Hotline:': 'Trợ giúp:',
       'Account type': 'Chọn loại đăng nhập',
       'Hanoi': 'Hà Nội',
