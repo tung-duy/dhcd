@@ -1,0 +1,57 @@
+$fsize: 14;
+$textCl: #5c6a82;
+$titleCl: #172b4d;
+$borderCl: #d0d4db;
+$boxWidth: 384px;
+$headerH: 78px;
+
+$vrHeadBg: transparent;
+$bodyBgColor: #E4E4E4; /* #113D9C;*/
+$maxLogoWidth: 120px; /* 150px;*/
+$maxMobileMainLogo: 110px;
+$mobileMaxLogoWidth: 70px; /* 80px;*/
+$headMaxLogoWidth: 70px; /* 154px;*/
+$darkTitleColor: #fff; /* #fff;*/
+$pageDescColor: #fff; /* #fff; */
+$dateTextColor: #fff;
+$headerTextColor: #fff;
+$mobileHeaderTextColor: #fff;
+$mobilePlaceholderColor: #5c6a82;
+$mobileInputColor: #091e42;
+
+@mixin display-flex() {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+}
+
+@mixin transform ($trans) {
+    transform: $trans;
+    -moz-transform: $trans;
+    -webkit-transform: $trans;
+    -o-transform: $trans;
+    -ms-transform: $trans;
+}
+
+@mixin transi ($transi) {
+    transition: $transi;
+    -moz-transition: $transi;
+    -webkit-transition: $transi;
+    -o-transition: $transi;
+    -ms-transition: $transi;
+}
+
+@mixin shadow ($shadow) {
+    box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+    -o-box-shadow: $shadow;
+    -ms-box-shadow: $shadow;
+}
+
+@mixin flex-col-percent($percent) {
+    -ms-flex: 0 0 $percent;
+    flex: 0 0 $percent;
+    max-width: $percent;
+}
+

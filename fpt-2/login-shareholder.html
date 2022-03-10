@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login shareholder</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css?ver=1.1" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container-fluid text-right">
+        <div class="header-mobile text-left d-md-none">
+          <a href="index.html"><img class="header-logo img-fluid" src="images/company/logo-dark.png" alt="Logo" /></a>
+          <h1 class="page-title trans">Virtual Annual General Meetings</h1>
+        </div>
+
+        <div class="header-right">
+          <a class="text-hotline" href="tel:+84 287 3028 999">
+            <strong class="icon-hotline"></strong>
+            <span class="trans">Hotline:</span> <span class="value" data-key="hotline">+84 287 3028 999</span>
+          </a>
+
+          <div class="btn-group lang-group">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+              <img class="img-fluid" src="images/flags/en.svg" />
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <ul class="language-list">
+                <li>
+                  <strong class="trans">Display language</strong>
+                </li>
+                <li class="lang-item lang-vi">
+                    <a class="dropdown-item" href="#" data-lang="vi">
+                      <img class="icon-flag" src="images/flags/vi.svg" />
+                      <span>Tiếng Việt</span>
+                    </a>
+                </li>
+                <li class="lang-item lang-en current-lang">
+                    <a class="dropdown-item" href="#" data-lang="en">
+                      <img class="icon-flag" src="images/flags/en.svg" />
+                      <span>English</span>
+                      <img src="images/icons/icon-checkmark.svg" class="icon-checkmark" />
+                    </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <button class="navbar-toggler menu-icon-open" type="button">
+          <strong class="icon-menu-mobile"></strong>
+        </button>
+
+        <div id="header_navbar">
+          <div class="navbar-head">
+            <button class="navbar-toggler menu-icon-close" type="button">
+              <img src="images/icons/icon-close-gray.svg" />
+            </button>
+          </div>
+          <div class="navbar-content"></div>
+        </div>
+      </div>
+    </header>
+    
+    <section id="main_content">
+      <div class="container-fluid">
+
+        <div class="content-full">
+          
+          <div class="content-header">
+            <img class="main-logo img-fluid" src="images/company/logo-dark.png" />
+            <p class="main-desc text-uppercase">Công ty cổ phần FPT</p>
+              
+            <h1 class="page-title trans">Virtual Annual General Meetings</h1>
+            <p class="date-text"><span class="trans">Hanoi</span>, <span class="date-trans">2021-01-02</span></p>
+          </div>
+          
+          <div class="content-box content-box-dark">
+            <h2 class="box-title trans">Login</h2>
+
+            <div class="form-box">
+              <form action="otp-method.html" class="shareholder-form">
+                <div class="form-group form-input">
+                  <label><span class="trans">Shareholder's Code/Passport</span> <em>*</em></label>
+                  <div class="input-box">
+                    <img class="input-icon" src="images/icons/icon-grid-bar.svg" />
+                    <input type="text" name="name" class="form-control pl-trans" placeholder="Enter shareholder's code/passport" autocomplete="off" />
+                  </div>
+                </div>
+                
+                <input type="hidden" name="auth_type" value="" class="auth-type" />
+
+                <div class="form-buttons">
+                  <button type="button" class="btn btn-block btn-main trans text-uppercase" data-value="OTP">Otp authentication</button>
+                  <button type="button" class="btn btn-block btn-main trans text-uppercase" data-value="eKYC">eKYC authentication</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          
+        </div>
+        
+        <p class="copyright copyright-full trans">© Copyright FPT Telecom 2021</p>
+
+      </div>
+    </section>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js?ver=1.1"></script>
+    
+    <script>
+      $('.shareholder-form .form-buttons button').click(function (e) {
+        e.preventDefault();
+        var authType = $(this).data('value');
+        var form = $(this).closest('form');
+        form.find('.auth-type').val(authType);
+        if (authType === 'OTP') {
+          form.attr('action', 'otp-method.html');
+        } else {
+          form.attr('action', 'customer-identification.html');
+        }
+        form.submit();
+      });
+    </script>
+  </body>
+</html>

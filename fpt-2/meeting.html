@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Virtual meeting</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css?ver=1.2" />
+  </head>
+  <body class="vr-body">
+    <header id="header" class="meeting-header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-9 col-md-8">
+            <img class="header-logo img-fluid" src="images/company/logo-light.png" alt="Logo" />
+            <h1 class="page-title trans">Virtual Annual General Meetings</h1>
+          </div>
+
+          <div class="col-3 col-md-4 text-right">
+            <div class="header-right">
+              <button class="btn vote-btn trans" data-toggle="modal" data-target="#vote_modal">Vote</button>
+              <a class="file-btn" href="#"><img src="images/icons/icon-document.svg" /></a>
+              
+              <div class="btn-group profile-group">
+                <a class="dropdown-toggle profile-btn" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <img src="images/icons/icon-user-circle.svg" />
+                  <img class="show-active" src="images/icons/icon-user-fill.svg" />
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <ul class="profile-links">
+                    <li>
+                        <a class="dropdown-item" href="#" data-lang="vi">
+                          <img class="icon-flag" src="images/icons/icon-user-circle.svg" />
+                          <span>Thông tin cổ đông</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#" data-lang="en">
+                          <img class="icon-flag" src="images/icons/icon-logout.svg" />
+                          <span>Đăng xuất</span>
+                        </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <button class="navbar-toggler menu-icon-open" type="button">
+              <img src="images/icons/icon-menu-mobile-gray.svg" />
+            </button>
+
+            <div id="header_navbar">
+              <div class="navbar-head">
+                <button class="navbar-toggler menu-icon-close" type="button">
+                  <img src="images/icons/icon-close-gray.svg" />
+                </button>
+              </div>
+              <div class="navbar-content"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <section id="main_content">
+
+      <div class="meeting-container">
+        <div class="container-fluid">
+          <div class="row meeting-row">
+            <div class="col-md-8 col-lg-9 screen-col">
+              <video id="meeting_video" poster="images/video-screen.png">
+                <source src="video.mp4" type="video/mp4">
+              </video>
+            </div>
+
+            <div class="col-md-4 col-lg-3 activity-col">
+              <div class="activity-box">
+                <ul class="nav nav-tabs" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#chat_box" role="tab" aria-controls="home" aria-selected="true">
+                      <span>
+                        <img src="images/icons/icon-chat.svg" />
+                        <img class="show-active" src="images/icons/icon-chat-active.svg" />
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#meeting_info_box" role="tab" aria-controls="profile" aria-selected="false">
+                      <span>
+                        <img src="images/icons/icon-video-question.svg" />
+                        <img class="show-active" src="images/icons/icon-video-question-active.svg" />
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+
+                <div class="tab-content">
+                  <div class="tab-pane fade show active" id="chat_box" role="tabpanel" aria-labelledby="home-tab">
+                    <ul class="chat-list">
+                      <li class="mess-admin">
+                        <strong><img src="images/icons/icon-shield.svg" />Admin: </strong>
+                        <span>Đã kết thúc vote BẦU BAN KIỂM SOÁT</span>
+                      </li>
+                      <li class="mess-self"><strong>Tôi:</strong> <span>Tôi có câu hỏi</span></li>
+                      <li><strong>Nguyễn Thị Hồng Nhung:</strong> <span>Xin mời cổ đông đặt câu hỏi</span></li>
+                    </ul>
+                    
+                    <form class="chat-form">
+                      <input type="text" placeholder="Ask question" class="form-control pl-trans" />
+                      <button class="btn trans" type="submit">Send</button>
+                    </form>
+                  </div>
+
+                  <div class="tab-pane fade" id="meeting_info_box" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="info-list">
+                      <div class="info-item">
+                        <p>Tham gia Đại hội cổ đông trực tuyến bằng ứng dụng Zoom.</p>
+                        <button class="btn btn-block btn-main">Mở ứng dụng Zoom</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal fade" id="vote_modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title trans">Biểu quyết</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <img class="img-icon" src="images/icons/icon-cross.svg" />
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="time-countdown">
+                <img class="img-icon" src="images/icons/icon-stopwatch.svg" />
+                <span>Thời gian còn lại </span>
+                <span class="countdown">
+                  <span class="minute">10</span>:<span class="second">00</span>
+                </span>
+              </div>
+              
+              <form class="vote-form">
+                <h4 class="box-title">Thông tin người nhận uỷ quyền</h4>
+                
+                <div class="row field-row">
+                  <div class="col-lg-6 form-group">
+                    <label>Họ tên cổ đông/Người được uỷ quyền</label>
+                    <input type="text" class="form-control" placeholder="VD: Nguyễn Văn A" />
+                  </div>
+                  
+                  <div class="col-lg-6 form-group">
+                    <label>Số cổ đông uỷ quyền</label>
+                    <input type="number" min="0" class="form-control" placeholder="VD: 2" />
+                  </div>
+                </div>
+                
+                <div class="row field-row">
+                  <div class="col-lg-6 form-group">
+                    <label>Số cổ phiếu được uỷ quyền</label>
+                    <input type="text" class="form-control input-num-format" placeholder="VD: 1.000.000" />
+                  </div>
+                  
+                  <div class="col-lg-6 form-group">
+                    <label>Sổ cổ phần sở hữu</label>
+                    <input type="text" class="form-control input-num-format" placeholder="VD: 1.000.000" />
+                  </div>
+                </div>
+                
+                <div class="row field-row">
+                  <div class="col-lg-6 form-group">
+                    <label>Số ĐKSH người nhận uỷ quyền</label>
+                    <input type="text" class="form-control" placeholder="VD: 07008855" />
+                  </div>
+                  
+                  <div class="col-lg-6 form-group">
+                    <label>Tổng số CP có quyền biểu quyết</label>
+                    <input type="text" class="form-control input-num-format" placeholder="VD: 2.000.000" />
+                  </div>
+                </div>
+                
+                <hr />
+                
+                <h4 class="box-title" style="margin-top: 32px;">Danh sách người uỷ quyền</h4>
+                <ol class="list-name">
+                  <li>Vũ Văn Tùng</li>
+                  <li>Nguyễn Văn Sơn</li>
+                </ol>
+                <a href="#" class="export-link">Xuất danh sách uỷ quyền</a>
+                
+                <div class="vote-control">
+                  <a href="#" class="btn"><strong>BẦU BAN KIỂM SOÁT</strong> <img class="img-icon" src="images/icons/icon-angle-down.svg" /></a>
+                  <div class="time-up-box">
+                    <img class="img-icon" src="images/icons/icon-time-alert.svg" /> 
+                    <span> Hết thời gian tham gia bỏ phiếu</span>
+                  </div>
+                </div>
+                
+                <div class="vote-type-box">
+                  <p><strong>Loại biểu quyết</strong></p>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="vote-type" id="vote_type_1" checked>
+                      <label class="form-check-label" for="vote_type_1">Chia đều phiếu biểu quyết cho các ứng viên</label>
+                    </div>
+                    
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="vote-type" id="vote_type_2">
+                      <label class="form-check-label" for="vote_type_2">Khác</label>
+                    </div>
+                  </div>
+                  
+                  <div class="vote-stats">
+                    <p>Tổng số phiếu biểu quyết: <strong>101.172.280</strong></p>
+                    <p>Số phiếu bầu tối đa: <strong>202.344.560</strong></p>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-block btn-submit-vote">Biểu quyết</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js?ver=1.1"></script>
+  </body>
+</html>
