@@ -1150,6 +1150,7 @@ a:hover {
 
 .page-title {
   font-family: JambonoBoldFont;
+  color: #ff0000;
 }
 
 .date-trans,
@@ -1157,11 +1158,17 @@ a:hover {
   font-family: DaxBoldFont;
   font-size: 22px;
   font-weight: normal;
+  color: #000;
 }
 
 .content-left {
   -webkit-backdrop-filter: blur(3.1px);
           backdrop-filter: blur(3.1px);
+}
+
+.login-share-holder {
+  background: #fff url(../images/company/page-bg-share.jpg) no-repeat;
+  background-position: right bottom;
 }
 
 @media screen and (min-width: 992px) {

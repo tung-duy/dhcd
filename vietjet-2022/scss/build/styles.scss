@@ -957,6 +957,7 @@ a {
 
 .page-title {
   font-family: JambonoBoldFont;
+  color: #ff0000;
 }
 
 .date-trans,
@@ -964,10 +965,16 @@ a {
   font-family: DaxBoldFont;
   font-size: 22px;
   font-weight: normal;
+  color: #000;
 }
 
 .content-left {
   backdrop-filter: blur(3.1px);
+}
+
+.login-share-holder {
+  background: #fff url(../images/company/page-bg-share.jpg) no-repeat;
+  background-position: right bottom;
 }
 
 @import '../_responsive';
