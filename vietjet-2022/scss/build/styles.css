@@ -4,7 +4,8 @@
 /* 154px;*/
 /* #fff;*/
 /* #fff; */
-body, html {
+body,
+html {
   font-size: 14px;
   font-family: 'Be Vietnam Pro', sans-serif;
   color: #5c6a82;
@@ -75,7 +76,8 @@ a:hover {
   -ms-transition: all ease-in-out 0.3s;
 }
 
-#header .file-btn, #header .profile-btn {
+#header .file-btn,
+#header .profile-btn {
   display: inline-block;
   padding: 4px 8px;
 }
@@ -186,7 +188,7 @@ a:hover {
   border-right: none;
 }
 
-.vr-body #header [class^="col-"] {
+.vr-body #header [class^='col-'] {
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -196,7 +198,7 @@ a:hover {
           align-items: center;
 }
 
-.vr-body #header [class^="col-"].text-right {
+.vr-body #header [class^='col-'].text-right {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -291,7 +293,9 @@ a:hover {
   background-size: 100% 100%;
 }
 
-.content-left, .content-right, .content-full {
+.content-left,
+.content-right,
+.content-full {
   padding-top: 78px;
   display: -ms-flexbox;
   display: -webkit-box;
@@ -306,7 +310,9 @@ a:hover {
           justify-content: center;
 }
 
-.vr-body .content-left, .vr-body .content-right, .vr-body .content-full {
+.vr-body .content-left,
+.vr-body .content-right,
+.vr-body .content-full {
   padding-top: 30px;
 }
 
@@ -447,7 +453,8 @@ a:hover {
   margin-bottom: 16px;
 }
 
-.page-title, .box-title {
+.page-title,
+.box-title {
   color: #fff;
 }
 
@@ -476,16 +483,19 @@ a:hover {
   color: #172b4d;
 }
 
-.content-box .back-btn, .content-box .btn-step {
+.content-box .back-btn,
+.content-box .btn-step {
   margin-bottom: 32px;
 }
 
-.back-btn, .btn-step {
+.back-btn,
+.btn-step {
   display: inline-block;
   font-weight: 500;
 }
 
-.back-btn img, .btn-step img {
+.back-btn img,
+.btn-step img {
   margin-right: 8px;
   margin-bottom: 4px;
 }
@@ -602,7 +612,7 @@ a:hover {
 }
 
 .input-otps input.input-otp:after {
-  content: "x";
+  content: 'x';
 }
 
 .upload-box .text-preview {
@@ -630,7 +640,8 @@ a:hover {
   font-size: 0.85714rem;
 }
 
-.upload-box .preview-video, .upload-box .recording-video {
+.upload-box .preview-video,
+.upload-box .recording-video {
   width: 200px;
   height: 200px;
 }
@@ -745,7 +756,7 @@ a:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background: #F3F4F6;
+  background: #f3f4f6;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -771,7 +782,7 @@ a:hover {
   margin-right: -6px;
 }
 
-.row.meeting-row [class^="col-"] {
+.row.meeting-row [class^='col-'] {
   padding-left: 6px;
   padding-right: 6px;
 }
@@ -1001,7 +1012,8 @@ a:hover {
   color: #172b4d;
 }
 
-.vote-form input[type="text"], .vote-form input[type="number"] {
+.vote-form input[type='text'],
+.vote-form input[type='number'] {
   height: 40px;
   border-radius: 8px;
   border-color: #d0d4db;
@@ -1021,7 +1033,7 @@ a:hover {
   margin-right: -12px;
 }
 
-.vote-form .field-row > [class^="col-"] {
+.vote-form .field-row > [class^='col-'] {
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -1112,10 +1124,44 @@ a:hover {
   color: #455570;
 }
 
-.copyright-full, .vr-body .copyright, .copyright-mobile {
+.copyright-full,
+.vr-body .copyright,
+.copyright-mobile {
   text-align: center;
   margin-top: -32px;
   width: 100%;
+}
+
+@font-face {
+  font-family: JambonoBoldFont;
+  src: url("../fonts/Jambono Black.ttf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: JambonoMediumFont;
+  src: url("../fonts/Jambono Medium.ttf");
+}
+
+@font-face {
+  font-family: DaxBoldFont;
+  src: url("../fonts/Dax Bold.ttf");
+}
+
+.page-title {
+  font-family: JambonoBoldFont;
+}
+
+.date-trans,
+.date-text span {
+  font-family: DaxBoldFont;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.content-left {
+  -webkit-backdrop-filter: blur(3.1px);
+          backdrop-filter: blur(3.1px);
 }
 
 @media screen and (min-width: 992px) {
