@@ -19,7 +19,7 @@
 
 @media screen and (max-width: 768px) {
   body {
-    background: #e4e4e4 url(../images/company/Mobile.jpg) no-repeat;
+    background: #e4e4e4 url('../images/company/Mobile.jpg') no-repeat;
     background-position: 68% bottom;
     background-size: cover;
   }
@@ -476,6 +476,30 @@
         margin-bottom: 56px;
       }
     }
+  }
+  .content-left {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    backdrop-filter: none;
+  }
+
+  .date-text {
+    display: none;
+  }
+
+  .main-logo {
+    display: none;
+  }
+
+  .page-title {
+    margin-bottom: 200px;
+  }
+
+  .content-right {
+    padding-top: 0px;
   }
 }
 
