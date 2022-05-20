@@ -1169,6 +1169,7 @@ a:hover {
 .login-share-holder {
   background: #fff url(../images/company/page-bg-share.jpg) no-repeat;
   background-position: right bottom;
+  background-size: cover;
 }
 
 @media screen and (min-width: 992px) {
@@ -1186,7 +1187,38 @@ a:hover {
   }
 }
 
+@media only screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1365px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-device-width: 1367px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .login-share-holder {
+    background-position: 100%;
+  }
+  .login-share-holder .content-full {
+    padding-top: 0;
+    padding-bottom: 453px;
+  }
+  .login-share-holder .box-title {
+    display: none;
+  }
   body {
     background: #e4e4e4 url("../images/company/Mobile.jpg") no-repeat;
     background-position: 68% bottom;
