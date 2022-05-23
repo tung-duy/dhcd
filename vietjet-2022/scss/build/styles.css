@@ -1187,14 +1187,14 @@ a:hover {
   }
 }
 
-@media only screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
   * {
     margin: 0;
     padding: 0;
   }
 }
 
-@media only screen and (min-device-width: 1200px) and (max-device-width: 1365px) {
+@media screen and (min-width: 1200px) and (max-width: 1366px) {
   * {
     margin: 0;
     padding: 0;
@@ -1205,6 +1205,13 @@ a:hover {
   * {
     margin: 0;
     padding: 0;
+  }
+  .content-header {
+    margin-bottom: 60px;
+    margin-top: 140px;
+  }
+  .content-full {
+    padding-bottom: 50px;
   }
 }
 
